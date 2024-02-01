@@ -17,6 +17,10 @@
       "image": "/img/logo/logo_small.png",
       "alt": "Logo"
     },
+    "logo2": {
+      "image": "/img/logo/logo_small.jpg",
+      "alt": "Logo"
+    },
     "menu": [
       {
         "label": "Home",
@@ -172,7 +176,7 @@
     ]
   },
   "footer": {
-    "copy": "© 2024 Starbelly. All rights reserved."
+    "copy": "© 2024 The Oak African Store. All rights reserved."
   },
   "social": [
     {

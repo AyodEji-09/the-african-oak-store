@@ -55,10 +55,10 @@ const DefaultHeader = () => {
                         <ul className={`sb-navigation ${mobileMenu ? "sb-active" : ""}`}>
                             {AppData.header.menu.map((item, index) => (
                             <li className={`sb-has-children ${isPathActive(item.link) ? "sb-active" : ""}`} key={`header-menu-item-${index}`}>
-                                <Link href={item.link} onClick={(item.children.length > 0)  ? (e) => handleSubMenuClick(index, e) : null}>
+                                <Link href={item.link} onClick={(item.children?.length > 0)  ? (e) => handleSubMenuClick(index, e) : null}>
                                     {item.label}
                                 </Link>
-                                {item.children.length > 0 && (
+                                {item.children?.length > 0 && (
                                 <ul className={openSubMenu === index ? 'sb-active' : ''}>
                                     {item.children.map((subitem, subIndex) => (
                                     <li key={`header-submenu-item-${subIndex}`} className={isPathActive(subitem.link) ? "sb-active" : ""}>

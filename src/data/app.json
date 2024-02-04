@@ -17,6 +17,7 @@
       "image": "/img/logo/logo_small.png",
       "alt": "Logo"
     },
+
     "logo2": {
       "image": "/img/logo/logo_small.jpg",
       "alt": "Logo"
@@ -24,149 +25,15 @@
     "menu": [
       {
         "label": "Home",
-        "link": "/",
-        "children": [
-          {
-            "label": "Homepage 1",
-            "link": "/"
-          },
-          {
-            "label": "Homepage 2",
-            "link": "/home-2"
-          }
-        ]
+        "link": "/"
       },
       {
-        "label": "Pages",
-        "link": "/about",
-        "children": [
-          {
-            "label": "About 1",
-            "link": "/about"
-          },
-          {
-            "label": "About 2",
-            "link": "/about-2"
-          },
-          {
-            "label": "Gallery 1",
-            "link": "/gallery"
-          },
-          {
-            "label": "Gallery 2",
-            "link": "/gallery-2"
-          },
-          {
-            "label": "Reviews",
-            "link": "/reviews"
-          },
-          {
-            "label": "Reservation",
-            "link": "/reservation"
-          },
-          {
-            "label": "FAQ",
-            "link": "/faq"
-          },
-          {
-            "label": "404",
-            "link": "/404"
-          }
-        ]
-      },
-      {
-        "label": "Menu",
-        "link": "/menu",
-        "children": [
-          {
-            "label": "Menu 1",
-            "link": "/menu"
-          },
-          {
-            "label": "Menu 2",
-            "link": "/menu-2"
-          },
-          {
-            "label": "Menu 3",
-            "link": "/menu-3"
-          },
-          {
-            "label": "Menu 4",
-            "link": "/menu-4"
-          },
-          {
-            "label": "Menu 5",
-            "link": "/menu-5"
-          },
-          {
-            "label": "Menu 6",
-            "link": "/menu-6"
-          }
-        ]
-      },
-      {
-        "label": "Blog",
-        "link": "/blog-3",
-        "children": [
-          {
-            "label": "Blog",
-            "link": "/blog-3"
-          },
-          {
-            "label": "Blog list",
-            "link": "/blog"
-          },
-          {
-            "label": "Blog list 2",
-            "link": "/blog-2"
-          },
-          {
-            "label": "Publication",
-            "link": "/blog/beet-and-burrata-salad-with-fried-bread"
-          },
-          {
-            "label": "Publication 2",
-            "link": "/blog/creamy-kale-pasta"
-          },
-          {
-            "label": "Publication 3",
-            "link": "/blog/incredible-vegan-mac-and-cheese"
-          }
-        ]
+        "label": "About",
+        "link": "/about"
       },
       {
         "label": "Shop",
-        "link": "/shop",
-        "children": [
-          {
-            "label": "Shop",
-            "link": "/shop"
-          },
-          {
-            "label": "Shop 2",
-            "link": "/shop-2"
-          },
-          {
-            "label": "Products",
-            "link": "/products"
-          },
-          {
-            "label": "Products 2",
-            "link": "/products-2"
-          },
-          {
-            "label": "Product page",
-            "link": "/product"
-          },
-          {
-            "label": "Cart",
-            "link": "/cart"
-          },
-          {
-            "label": "Checkout",
-            "link": "/checkout"
-          }
-        ]
+        "link": "/shop"
       },
       {
         "label": "Contact",
@@ -176,7 +43,11 @@
     ]
   },
   "footer": {
-    "copy": "© 2024 The Oak African Store. All rights reserved."
+    "copy": "The Oak African Store. All rights reserved.",
+    "payment": {
+      "image": "/img/logo/payment-method.png",
+      "alt": "payment options"
+    }
   },
   "social": [
     {

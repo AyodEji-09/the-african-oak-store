@@ -348,20 +348,20 @@ footer {
   -webkit-backdrop-filter: blur(8px);
 
   & .sb-footer-frame {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
+
+    & .sb-footer-frame-desc {
+      color: $c7;
+    }
 
     & .sb-logo-frame {
-      width: 33.333%;
+      width: 66.67%;
       display: flex;
       align-items: center;
       transition: $tr;
 
       & img {
-        width: 100px;
-        margin-right: 5px !important;
+        width: 80px;
+        margin-right: 6px !important;
       }
 
       &:hover {
@@ -370,23 +370,22 @@ footer {
     }
 
     & .sb-copy {
-      text-align: right;
-      width: 33.333%;
-      font-size: 12px;
-      color: $c2;
+      font-weight: lighter;
+
+      & p {
+        color: $c7 ;
+        font-size: 12px;
+      }
     }
   }
 }
 @media (max-width: 992px) {
   footer {
     & .sb-footer-frame {
-      padding: 30px 0;
       height: auto;
-      flex-direction: column;
 
       & .sb-logo-frame {
         width: 100%;
-        justify-content: center;
         margin-bottom: 30px;
       }
 
@@ -401,6 +400,11 @@ footer {
       & .sb-copy {
         width: 100%;
         text-align: center;
+
+        & p {
+          color: $c7 ;
+          font-size: 12px;
+        }
       }
     }
   }

@@ -1,12 +1,23 @@
-$c1: #231E41;
-$c1t: rgba(38,31,65,.9);
-$c2: #6F6F87;
-$c3: #F2F3F5;
-$c4: #FFFFFF;
-$c4t: rgba(255,255,255,.92);
+$c1: #231e41;
+$c1t: rgba(38, 31, 65, 0.9);
+$c2: #6f6f87;
+$c3: #f2f3f5;
+$c4: #ffffff;
+$c4t: rgba(255, 255, 255, 0.92);
 $c5t: #242424;
 $c5: #0477bf;
-$c6: #F9FAFC;
+$c6: #f9fafc;
+$c7: #bfbfbf;
 
-$tr: .3s ease-in-out;
-$tr-lg: .4s ease-in-out;
+$tr: 0.3s ease-in-out;
+$tr-lg: 0.4s ease-in-out;
+
+.c7 {
+  color: $c7;
+}
+.c5 {
+  color: $c5;
+}
+.c7-bg{
+    background-color: $c7;
+}

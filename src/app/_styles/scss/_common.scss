@@ -117,9 +117,9 @@ ul {
 }
 
 .sb-text {
-  color: $c2;
+  color: $c1;
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
 
   &.sb-text-xs {
     font-size: 12px;
@@ -130,7 +130,7 @@ ul {
   }
 
   &.sb-text-lg {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -162,12 +162,12 @@ h6 {
 
 .sb-h1,
 h1 {
-  line-height: 100%;
+  line-height: 1.09;
   font-size: 72px;
   letter-spacing: -3px;
 
   & span {
-    background-color: $c6;
+    // background-color: $c6;
   }
 }
 

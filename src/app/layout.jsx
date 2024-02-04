@@ -1,12 +1,4 @@
-import { Rubik, Monoton, Poppins } from "next/font/google";
-
-const rubik = Rubik({
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-  variable: "--font-rubik",
-  display: "swap",
-});
+import { Monoton, Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],

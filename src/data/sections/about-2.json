@@ -1,13 +1,14 @@
 {
-    "title": "We are doing more than <br>you expect",
-    "description": "<p>Faudantium magnam error temporibus ipsam aliquid neque quibusdam dolorum, quia ea numquam assumenda mollitia dolorem impedit. Voluptate at quis exercitationem officia temporibus adipisci quae totam enim dolorum, assumenda. Sapiente soluta nostrum reprehenderit a velit obcaecati facilis vitae magnam tenetur neque vel itaque inventore eaque explicabo commodi maxime! Aliquam quasi, voluptates odio.</p><p>Consectetur adipisicing elit. Cupiditate nesciunt amet facilis numquam, nam adipisci qui voluptate voluptas enim obcaecati veritatis animi nulla, mollitia commodi quaerat ex, autem ea laborum.</p>",
-    "image": {
-        "url": "/img/gallery/2.jpg",
-        "alt": "image"
-    },
-    "number": {
-        "value": "17",
-        "label": "Years Experiense"
-    },
-    "signature": "/img/ui/signature.png"
+  "title": "Embark on a Culinary Journey with Authentic African Ingredients",
+  "description": "<p>Welcome to our online store, your gateway to the vibrant and diverse world of African cuisine. We specialize in providing a wide range of high-quality foodstuffs and ingredients that allow you to recreate the authentic flavors of Africa in your own kitchen.</p><p>At our store, we believe that the key to experiencing the true essence of African cuisine lies in using the right ingredients. That's why we carefully source and curate an extensive selection of spices, herbs, grains, sauces, and more, all chosen to help you prepare sumptuous and flavorful African dishes.</p><p>Whether you're craving the fiery heat of West African pepper sauce, the earthy richness of East African grains, or the aromatic spices of North African tagines, our collection has everything you need to elevate your cooking to new heights.</p><p>Join us on a culinary journey of discovery as we celebrate the culinary artistry of Africa. From traditional favorites to modern twists, our ingredients empower you to explore the rich tapestry of flavors that make African cuisine so extraordinary.</p>",
+
+  "image": {
+    "url": "/img/blog/SLIDE B.jpg",
+    "alt": "image"
+  },
+  "number": {
+    "value": "4",
+    "label": "Years Experiense"
+  },
+  "signature": "/img/ui/signature.png"
 }

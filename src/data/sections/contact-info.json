@@ -1,19 +1,19 @@
 {
-    "items": [
-        {
-            "num": "01",
-            "title": "Welcome",
-            "text": "Montréal, 1510 Rue Sauvé"
-        },
-        {
-            "num": "02",
-            "title": "Call",
-            "text": "+02 (044) 756-X6-52"
-        },
-        {
-            "num": "03",
-            "title": "Write",
-            "text": "starbelly@mail.com"
-        }
-    ]
+  "items": [
+    {
+      "num": "01",
+      "title": "Welcome",
+      "text": "to Oak Africa Store"
+    },
+    {
+      "num": "02",
+      "title": "Call",
+      "text": "+1 (951) 283-3784,"
+    },
+    {
+      "num": "03",
+      "title": "Write",
+      "text": "theoakafricastore@gmail.com"
+    }
+  ]
 }

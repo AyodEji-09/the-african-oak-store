@@ -1,34 +1,30 @@
 {
-    "title": "What do you <span>like today?</span>",
-    "description": "Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.",
+    "title": "What we <span>offer</span>",
+    "description": "Explore a world of culinary possibilities with our diverse offerings. From premium ingredients that form the foundation of African cuisine to ready-to-eat delights that bring the flavors of Africa directly to your table, we offer a range of options to suit every taste and lifestyle. Whether you're a seasoned chef looking to elevate your dishes or a busy home cook seeking convenience without compromising on authenticity, our curated selection has something for everyone. Dive into our collection of African recipes, tips, and guides to unlock your culinary creativity and embark on a flavorful journey through the vibrant tapestry of African cuisine.",
+
     "button": {
         "link": "/shop",
         "label": "Go shopping now"
     },
-    "items": [
-        {
+    
+        "items": [
+          {
             "image": "/img/categories/1.png",
-            "title": "Starters",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+            "title": "Premium Ingredients",
+            "text": " Discover a curated selection of high-quality African spices, grains, sauces, and condiments that form the backbone of African cooking.",
             "link": "/products"
-        },
-        {
+          },
+          {
             "image": "/img/categories/2.png",
-            "title": "Main dishes",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+            "title": "Ready-to-Eat Delights",
+            "text": "Indulge in the convenience of ready-to-eat African meals and snacks that offer an authentic taste of Africa without leaving your home.",
             "link": "/products"
-        },
-        {
+          },
+          {
             "image": "/img/categories/3.png",
-            "title": "Drinks",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+            "title": "ulinary Inspiration",
+            "text": "Dive into our collection of African recipes, tips, and guides that demystify the art of African cooking and encourage your culinary creativity.",
             "link": "/products"
-        },
-        {
-            "image": "/img/categories/4.png",
-            "title": "Desserts",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "link": "/products"
-        }
-    ]
-}
+          }
+        ]
+      }

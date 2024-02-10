@@ -27,7 +27,7 @@ async function Home1() {
       <CategoriesSection />
       <ProductsSlider items={Products.collection['popular']} slidesPerView={4} />
       {/* <TeamSection /> */}
-      <CallToActionSection />
+      {/* <CallToActionSection /> */}
     </>
   );
 };

@@ -1,28 +1,28 @@
 {
     "image": { 
-        "url": "/img/illustrations/interior.jpg",
+        "url": "/img/blog/SLIDE A.jpg",
         "alt": "interior"
     },
     "number": {
-        "value": "17",
+        "value": "4",
         "label": "Years Experiense"
     },
     "title": "We are doing more than <br>you expect",
     "items": [
         {
             "num": "01",
-            "title": "We are located in the city center",
-            "text": "Porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi numquam."
+            "title": "Shop from anywhere, anytime",
+            "text": "Discover a world of convenience with our online store. Whether you're at home, work, or on the go, enjoy seamless shopping experiences that cater to your needs. Say goodbye to limitations and embrace the freedom of shopping anytime, anywhere."
         },
         {
             "num": "02",
             "title": "Fresh, organic ingredients",
-            "text": "Consectetur numquam porro nemo veniam necessitatibus praesentium eligendi rem temporibus adipisci quo modi."
+            "text": "Experience the finest selection of hand-picked, locally-sourced ingredients crafted to perfection. Indulge in flavors that tantalize your taste buds and savor every moment of culinary delight."
         },
         {
             "num": "03",
-            "title": "Own fast delivery",
-            "text": "Necessitatibus praesentium eligendi rem temporibus adipisci quo modi. Lorem ipsum dolor sit."
-        }
+            "title": "Lightning-fast delivery to your doorstep",
+            "text": "Experience the convenience of our swift and reliable delivery service. From placing your order to doorstep delivery, we ensure your items reach you promptly and securely. Sit back, relax, and let us handle the rest while you enjoy your shopping experience."
+          }
     ]
 }

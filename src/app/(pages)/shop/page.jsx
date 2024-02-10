@@ -21,12 +21,12 @@ export const metadata = {
 const Shop = () => {
   return (
     <>
-      <PageBanner pageTitle={"Online shop"} breadTitle={"Shop"} type={1} />
+      <PageBanner pageTitle={"Online Store"} breadTitle={"Shop"} type={1} />
       <CategoriesSection heading={0} paddingTop={90} />
       <ProductsSlider 
         items={Products.collection['popular']} 
-        title={'Most <span>popular</span> dishes'} 
-        description={'Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.'} 
+        title={'Most <span>popular</span> foodstuffs'} 
+        description={'Embark on a culinary journey through the most beloved flavors of Africa with our selection of popular foodstuffs. At The African Oak Store, we celebrate the richness and diversity of African cuisine, bringing you the most sought-after ingredients and delicacies that capture the essence of our culinary heritage. '} 
         button={ {"link": "/products", "label": "View all", "icon": '/img/ui/icons/arrow.svg'} }
         slidesPerView={4}
         itemType={'product'} 
@@ -40,7 +40,7 @@ const Shop = () => {
         itemType={'product'} 
       />
       <TeamSection />
-      <PromoSection />
+      {/* <PromoSection /> */}
     </>
   );
 };

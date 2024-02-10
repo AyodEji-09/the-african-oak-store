@@ -1,13 +1,13 @@
 {
     "title": "Restaurant is like a theater. <br>Our task is to amaze you!",
     "subtitle": "Promo video",
-    "description": "Repellat, dolorem a. Qui ipsam quos, obcaecati mollitia consectetur ad vero minus neque sit architecto totam distineserunt pariatur adipisci rem aspernatur illum ex!",
+    "description": "Step into our restaurant and prepare to be dazzled by a performance like no other. Just like a captivating theater production, our culinary team works tirelessly behind the scenes to orchestrate a symphony of flavors that will leave you spellbound. From the moment you enter, you'll be transported to a world where every dish is a work of art, meticulously crafted to ignite your senses and awaken your taste buds. Indulge in a culinary journey where each bite is a scene-stealer, and every course is a standing ovation. Join us for an unforgettable dining experience, where the spotlight is always on you.",
     "button": {
         "label": "Promo video",
         "link": "https://www.youtube.com/watch?v=F3zw1Gvn4Mk"
     },
     "image": {
-        "url": "/img/illustrations/interior-2.jpg",
+        "url": "/img/blog/SLIDE D.jpg",
         "alt": "interior"
     }
 }

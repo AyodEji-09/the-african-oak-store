@@ -1,6 +1,6 @@
 {
-    "title": "Most <span>popular</span> dishes",
-    "description": "Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.",
+    "title": "Sample <span>Food</span> Products",
+    "description": "Explore our curated selection of sample food products, designed to introduce you to the diverse and delicious world of African cuisine.",
     "button": {
         "link": "/menu",
         "icon": "/img/ui/icons/menu.svg",

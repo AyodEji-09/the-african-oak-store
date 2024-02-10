@@ -37,11 +37,11 @@ const TeamSection = ( { items } ) => {
                     <div className="sb-member-description">
                     <h4 className="sb-mb-10">{item.name}</h4>
                     <p className="sb-text sb-text-sm sb-mb-10">{item.role}</p>
-                    <ul className="sb-social">
+                    {/* <ul className="sb-social">
                         {item.social.map((social_item, social_key) => (
                         <li key={`team-item-${key}-social-${social_key}`}><a href={social_item.url} target="_blank" title={social_item.title}><i className={social_item.icon}></i></a></li>
                         ))}
-                    </ul>
+                    </ul> */}
                     </div>
                 </div>
                 </div>

@@ -2,212 +2,146 @@
     "collection": {
         "popular": [
             {
-                "image": "/img/menu/3.jpg",
-                "title": "Carpaccio de daurade",
-                "price": "14",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-            },
-            {
-                "image": "/img/menu/1.jpg",
-                "title": "Chevrefrit au miel",
-                "price": "14",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-            },
-            {
-                "image": "/img/menu/2.jpg",
-                "title": "Saumon Gravlax",
-                "price": "9",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-                "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-            },
-            {
-                "image": "/img/menu/9.jpg",
-                "title": "Croustillant de poisson",
-                "price": "4",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-                "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
-            },
-            {
-                "image": "/img/menu/5.jpg",
-                "title": "Carpaccio de daurade",
-                "price": "6",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-                "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-            },
-            {
-                "image": "/img/menu/4.jpg",
-                "title": "Stracciatella",
-                "price": "11",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-            }    
+                "title": "Palm Oil",
+                "image": "/img/blog/TOAS EFLYER A.jpg",
+                "description": "Indulge in the rich and vibrant flavor of our premium palm oil, sourced directly from the heart of Africa. Made from carefully selected palm fruit, our palm oil adds a distinctively delicious taste to your favorite dishes. Whether you're frying, sautéing, or using it as a base for soups and sauces, our palm oil elevates your culinary creations with its bold and earthy aroma. Experience the authentic taste of Africa with every drop of our high-quality palm oil.",
+                "quantity": 1,
+                "price": "14.00",
+                "currency": "$"
+              },
+              {
+                "title": "Plantain Fufu",
+                "image": "/img/blog/PLANTAIN-1.jpg",
+                "description": "Indulge in the pure taste of Africa with our Plantain Fufu, a traditional staple made from ripe plantains. Handcrafted with care and expertise, our Plantain Fufu is meticulously processed under hygienic conditions, ensuring its natural freshness and purity. Free from preservatives and artificial additives, each bite of our Plantain Fufu delivers authentic flavor and wholesome goodness. Whether paired with savory soups or enjoyed on its own, our Plantain Fufu promises a satisfying and nourishing dining experience that celebrates the rich culinary heritage of Africa.",
+                "quantity": 1,
+                "price": "7.99",
+                "currency": "$"
+              },
+              {
+                "title": "Garri",
+                "image": "/img/blog/GARRI-1.jpg",
+                "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+                "quantity": 1,
+                "price": "11.00",
+                "currency": "$"
+              },
+              {
+                "title": "Garri",
+                "image": "/img/blog/GARRI-1.jpg",
+                "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+                "quantity": 1,
+                "price": "11.00",
+                "currency": "$"
+              }
+            
         ],
         "bestseller": [
             {
-                "image": "/img/menu/6.jpg",
-                "title": "Croustillant de poisson",
-                "price": "4",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-                "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
-            },
-            {
-                "image": "/img/menu/7.jpg",
-                "title": "Carpaccio de daurade",
-                "price": "6",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-                "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-            },
-            {
-                "image": "/img/menu/8.jpg",
-                "title": "Stracciatella",
-                "price": "11",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-            },
-            {
-                "image": "/img/menu/11.jpg",
-                "title": "Carpaccio de daurade",
-                "price": "14",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-            },
-            {
-                "image": "/img/menu/10.jpg",
-                "title": "Chevrefrit au miel",
-                "price": "14",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-            },
-            {
-                "image": "/img/menu/9.jpg",
-                "title": "Saumon Gravlax",
-                "price": "9",
-                "currency": "$",
-                "rating": 5,
-                "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-                "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-            }
+                "title": "Garri",
+                "image": "/img/blog/GARRI-1.jpg",
+                "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+                "quantity": 1,
+                "price": "11.00",
+                "currency": "$"
+              },
+              {
+                "title": "Palm Oil",
+                "image": "/img/blog/TOAS EFLYER A.jpg",
+                "description": "Indulge in the rich and vibrant flavor of our premium palm oil, sourced directly from the heart of Africa. Made from carefully selected palm fruit, our palm oil adds a distinctively delicious taste to your favorite dishes. Whether you're frying, sautéing, or using it as a base for soups and sauces, our palm oil elevates your culinary creations with its bold and earthy aroma. Experience the authentic taste of Africa with every drop of our high-quality palm oil.",
+                "quantity": 1,
+                "price": "14.00",
+                "currency": "$"
+              },
+              {
+                "title": "Plantain Fufu",
+                "image": "/img/blog/PLANTAIN-1.jpg",
+                "description": "Indulge in the pure taste of Africa with our Plantain Fufu, a traditional staple made from ripe plantains. Handcrafted with care and expertise, our Plantain Fufu is meticulously processed under hygienic conditions, ensuring its natural freshness and purity. Free from preservatives and artificial additives, each bite of our Plantain Fufu delivers authentic flavor and wholesome goodness. Whether paired with savory soups or enjoyed on its own, our Plantain Fufu promises a satisfying and nourishing dining experience that celebrates the rich culinary heritage of Africa.",
+                "quantity": 1,
+                "price": "7.99",
+                "currency": "$"
+              },
+              {
+                "title": "Garri",
+                "image": "/img/blog/GARRI-1.jpg",
+                "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+                "quantity": 1,
+                "price": "11.00",
+                "currency": "$"
+              },
+              {
+                "title": "Garri",
+                "image": "/img/blog/GARRI-1.jpg",
+                "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+                "quantity": 1,
+                "price": "11.00",
+                "currency": "$"
+              }
         ]
     },
     "items": [
         {
-            "image": "/img/menu/1.jpg",
-            "title": "Chevrefrit au miel",
-            "price": "14",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-        },
-        {
-            "image": "/img/menu/2.jpg",
-            "title": "Saumon Gravlax",
-            "price": "9",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-            "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-        },
-        {
-            "image": "/img/menu/3.jpg",
-            "title": "Carpaccio de daurade",
-            "price": "14",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-        },
-        {
-            "image": "/img/menu/4.jpg",
-            "title": "Stracciatella",
-            "price": "11",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-        },
-        {
-            "image": "/img/menu/5.jpg",
-            "title": "Carpaccio de daurade",
-            "price": "6",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-            "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-        },
-        {
-            "image": "/img/menu/6.jpg",
-            "title": "Chevrefrit au miel",
-            "price": "14",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-        },
-        {
-            "image": "/img/menu/7.jpg",
-            "title": "Stracciatella",
-            "price": "11",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-        },
-        {
-            "image": "/img/menu/8.jpg",
-            "title": "Carpaccio de daurade",
-            "price": "6",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-            "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-        },
-        {
-            "image": "/img/menu/9.jpg",
-            "title": "Croustillant de poisson",
-            "price": "4",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-            "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
-        },
-        {
-            "image": "/img/menu/10.jpg",
-            "title": "Carpaccio de daurade",
-            "price": "6",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
-            "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-        },
-        {
-            "image": "/img/menu/11.jpg",
-            "title": "Carpaccio de daurade",
-            "price": "7",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-        },
-        {
-            "image": "/img/menu/12.jpg",
-            "title": "Carpaccio de daurade",
-            "price": "12",
-            "currency": "$",
-            "rating": 5,
-            "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
-        }
+            "title": "Palm Oil",
+            "image": "/img/blog/TOAS EFLYER A.jpg",
+            "description": "Indulge in the rich and vibrant flavor of our premium palm oil, sourced directly from the heart of Africa. Made from carefully selected palm fruit, our palm oil adds a distinctively delicious taste to your favorite dishes. Whether you're frying, sautéing, or using it as a base for soups and sauces, our palm oil elevates your culinary creations with its bold and earthy aroma. Experience the authentic taste of Africa with every drop of our high-quality palm oil.",
+            "quantity": 1,
+            "price": "14.00",
+            "currency": "$"
+          },
+          {
+            "title": "Plantain Fufu",
+            "image": "/img/blog/PLANTAIN-1.jpg",
+            "description": "Indulge in the pure taste of Africa with our Plantain Fufu, a traditional staple made from ripe plantains. Handcrafted with care and expertise, our Plantain Fufu is meticulously processed under hygienic conditions, ensuring its natural freshness and purity. Free from preservatives and artificial additives, each bite of our Plantain Fufu delivers authentic flavor and wholesome goodness. Whether paired with savory soups or enjoyed on its own, our Plantain Fufu promises a satisfying and nourishing dining experience that celebrates the rich culinary heritage of Africa.",
+            "quantity": 1,
+            "price": "7.99",
+            "currency": "$"
+          },
+          {
+            "title": "Garri",
+            "image": "/img/blog/GARRI-1.jpg",
+            "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+            "quantity": 1,
+            "price": "11.00",
+            "currency": "$"
+          },
+          {
+            "title": "Garri",
+            "image": "/img/blog/GARRI-1.jpg",
+            "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+            "quantity": 1,
+            "price": "11.00",
+            "currency": "$"
+          },
+          {
+            "title": "Palm Oil",
+            "image": "/img/blog/TOAS EFLYER A.jpg",
+            "description": "Indulge in the rich and vibrant flavor of our premium palm oil, sourced directly from the heart of Africa. Made from carefully selected palm fruit, our palm oil adds a distinctively delicious taste to your favorite dishes. Whether you're frying, sautéing, or using it as a base for soups and sauces, our palm oil elevates your culinary creations with its bold and earthy aroma. Experience the authentic taste of Africa with every drop of our high-quality palm oil.",
+            "quantity": 1,
+            "price": "14.00",
+            "currency": "$"
+          },
+          {
+            "title": "Plantain Fufu",
+            "image": "/img/blog/PLANTAIN-1.jpg",
+            "description": "Indulge in the pure taste of Africa with our Plantain Fufu, a traditional staple made from ripe plantains. Handcrafted with care and expertise, our Plantain Fufu is meticulously processed under hygienic conditions, ensuring its natural freshness and purity. Free from preservatives and artificial additives, each bite of our Plantain Fufu delivers authentic flavor and wholesome goodness. Whether paired with savory soups or enjoyed on its own, our Plantain Fufu promises a satisfying and nourishing dining experience that celebrates the rich culinary heritage of Africa.",
+            "quantity": 1,
+            "price": "7.99",
+            "currency": "$"
+          },
+          {
+            "title": "Garri",
+            "image": "/img/blog/GARRI-1.jpg",
+            "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+            "quantity": 1,
+            "price": "11.00",
+            "currency": "$"
+          },
+          {
+            "title": "Garri",
+            "image": "/img/blog/GARRI-1.jpg",
+            "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
+            "quantity": 1,
+            "price": "11.00",
+            "currency": "$"
+          }
     ]
 }

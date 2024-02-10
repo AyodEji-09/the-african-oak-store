@@ -35,7 +35,7 @@ const CallToActionTwoSection = ( { bg } ) => {
                     </div>
                     <div className="col-lg-6">
                         <div className="sb-illustration-8">
-                            <img src={Data.image.url} alt={Data.image.alt} className="sb-reserved" />
+                            <img src={Data.image.url} alt={Data.image.alt} className="sb-reserved" style={{width:600, height:500}}/>
 
                             <div className="sb-cirkle-1"></div>
                             <div className="sb-cirkle-2"></div>

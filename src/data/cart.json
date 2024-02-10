@@ -2,24 +2,24 @@
     "total": 3,
     "items": [
         {
-            "title": "Chevrefrit au miel",
-            "image": "/img/menu/1.jpg",
+            "title": "Palm Oil",
+            "image": "/img/blog/TOAS EFLYER A.jpg",
             "description": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
             "quantity": 1,
             "price": "14.00",
             "currency": "$"
         },
         {
-            "title": "Carpaccio de daurade",
-            "image": "/img/menu/2.jpg",
+            "title": "Plantain Fufu",
+            "image": "/img/blog/PLANTAIN-1.jpg",
             "description": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
             "quantity": 1,
             "price": "7.99",
             "currency": "$"
         },
         {
-            "title": "Stracciatella",
-            "image": "/img/menu/3.jpg",
+            "title": "Garri",
+            "image": "/img/blog/GARRI-1.jpg",
             "description": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp.",
             "quantity": 1,
             "price": "11.00",

@@ -27,8 +27,8 @@ const Contact = () => {
                         <div className="sb-main-title-frame">
                             <div className="sb-main-title">
                                 <span className="sb-suptitle sb-mb-30">Contact</span>
-                                <h1 className="sb-mb-30">Get in <span>Touch with Starbelly</span></h1>
-                                <p className="sb-text sb-text-lg sb-mb-30">Consectetur numquam poro nemo veniam<br/>eligendi rem adipisci quo modi.</p>
+                                <h1 className="sb-mb-30">The  <span>Oak Africa Store</span></h1>
+                                <p className="sb-text sb-text-lg sb-mb-30">Come, explore, and enjoy the savory delights of The African Oak Store. We also will love to hear from you afterwards.</p>
 
                                 <ul className="sb-breadcrumbs">
                                     <li><Link href="/">Home</Link></li>

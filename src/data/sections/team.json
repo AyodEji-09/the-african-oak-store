@@ -1,118 +1,30 @@
 {
-    "title": "They will <span>cook</span> for you",
-    "description": "Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.",
-    "button": {
-        "link": "/about",
-        "label": "More about us"
+  "title": "Our <span>Commitment</span> to you",
+  "description": "Our commitment to authenticity ensures that every item in our store is genuine and true to its African heritage. With meticulous quality assurance measures, we carefully source and select each product to meet our rigorous standards for quality and taste. Beyond offering ingredients, we're passionate about culinary education, aiming to inspire and empower our customers to embrace African cuisine and its rich flavors. Your satisfaction is our top priority, and we strive to provide exceptional service and a seamless shopping experience.",
+  "button": {
+    "link": "/about",
+    "label": "More about us"
+  },
+  "items": [
+    {
+      "image": "/img/blog/SLIDE A.jpg",
+      "name": "Quality Assurance",
+      "role": "We carefully source and select each item in our store to ensure that it meets our rigorous standards for quality and taste."
     },
-    "items": [
-        {
-            "image": "/img/team/1.png",
-            "name": "Paul Trueman",
-            "role": "Chef",
-            "social": [
-                {
-                    "icon": "fab fa-behance",
-                    "link": "https://behance.com",
-                    "title": "behance"
-                },
-                {
-                    "icon": "fab fa-dribbble",
-                    "link": "https://dribbble.com",
-                    "title": "dribbble"
-                },
-                {
-                    "icon": "fab fa-twitter",
-                    "link": "https://twitter.com",
-                    "title": "twitter"
-                },
-                {
-                    "icon": "fab fa-github",
-                    "link": "https://github.com",
-                    "title": "github"
-                }
-            ]
-        },
-        {
-            "image": "/img/team/2.png",
-            "name": "Emma Newman",
-            "role": "Assistant chef",
-            "social": [
-                {
-                    "icon": "fab fa-behance",
-                    "link": "https://behance.com",
-                    "title": "behance"
-                },
-                {
-                    "icon": "fab fa-dribbble",
-                    "link": "https://dribbble.com",
-                    "title": "dribbble"
-                },
-                {
-                    "icon": "fab fa-twitter",
-                    "link": "https://twitter.com",
-                    "title": "twitter"
-                },
-                {
-                    "icon": "fab fa-github",
-                    "link": "https://github.com",
-                    "title": "github"
-                }
-            ]
-        },
-        {
-            "image": "/img/team/3.png",
-            "name": "Oscar Oldman",
-            "role": "Chef",
-            "social": [
-                {
-                    "icon": "fab fa-behance",
-                    "link": "https://behance.com",
-                    "title": "behance"
-                },
-                {
-                    "icon": "fab fa-dribbble",
-                    "link": "https://dribbble.com",
-                    "title": "dribbble"
-                },
-                {
-                    "icon": "fab fa-twitter",
-                    "link": "https://twitter.com",
-                    "title": "twitter"
-                },
-                {
-                    "icon": "fab fa-github",
-                    "link": "https://github.com",
-                    "title": "github"
-                }
-            ]
-        },
-        {
-            "image": "/img/team/4.png",
-            "name": "Ed Freeman",
-            "role": "Assistant chef",
-            "social": [
-                {
-                    "icon": "fab fa-behance",
-                    "link": "https://behance.com",
-                    "title": "behance"
-                },
-                {
-                    "icon": "fab fa-dribbble",
-                    "link": "https://dribbble.com",
-                    "title": "dribbble"
-                },
-                {
-                    "icon": "fab fa-twitter",
-                    "link": "https://twitter.com",
-                    "title": "twitter"
-                },
-                {
-                    "icon": "fab fa-github",
-                    "link": "https://github.com",
-                    "title": "github"
-                }
-            ]
-        }
-    ]
+    {
+      "image": "/img/blog/SLIDE B.jpg",
+      "name": " Culinary Education",
+      "role": "We aim to educate, inspire, and empower our customers to embrace African cuisine and enjoy the pleasures of cooking and sharing these delectable dishes."
+    },
+    {
+      "image": "/img/blog/SLIDE C.jpg",
+      "name": "Authenticity",
+      "role": "We are dedicated to providing genuine, authentic African food products and ingredients."
+    },
+    {
+      "image": "/img/blog/SLIDE D.jpg",
+      "name": "Customer Satisfaction",
+      "role": "Your satisfaction is our top priority. We are committed to providing exceptional service and a seamless shopping experience."
+    }
+  ]
 }

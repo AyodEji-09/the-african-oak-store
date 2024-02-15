@@ -35,7 +35,7 @@ const AboutTwoSection = () => {
                         <div className="col-lg-6 align-self-center sb-mb-60">
                             <h2 className="sb-mb-60" dangerouslySetInnerHTML={{__html : Data.title}} />
                             <div className="sb-text sb-mb-30" dangerouslySetInnerHTML={{__html : Data.description}} />
-                            <img src={Data.signature} alt="Signature" className="sb-signature sb-mb-30" />
+                            {/* <img src={Data.signature} alt="Signature" className="sb-signature sb-mb-30" /> */}
                         </div>
                     </div>
                 </div>

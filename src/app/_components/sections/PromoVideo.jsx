@@ -23,12 +23,12 @@ const PromoVideoSection = () => {
                             <p className="sb-text sb-mb-30" dangerouslySetInnerHTML={{__html : Data.description}} />
                             
                             {/* button */}
-                            <a onClick={() => setOpen(true)} data-no-swup style={{ "cursor" : "pointer" }} className="sb-btn">
+                            {/* <a  data-no-swup style={{ "cursor" : "pointer" }} className="sb-btn">
                                 <span className="sb-icon">
                                     <img src="/img/ui/icons/play.svg" alt="icon" />
                                 </span>
                                 <span>{Data.button.label}</span>
-                            </a>
+                            </a> */}
                             {/* button end */}
                         </div>
                     </div>

@@ -20,10 +20,7 @@ const Products = () => {
       <PageBanner pageTitle={"Main dishes"} breadTitle={"Main dishes"} type={1} />
 
       {/* shop list */}
-      <section className="sb-menu-section sb-p-90-60">
-        <div className="sb-bg-1">
-          <div />
-        </div>
+      <section className="sb-menu-section mb-5">
         <div className="container">
           <ProductsGrid items={ProductsData.items} />
 

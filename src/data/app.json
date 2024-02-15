@@ -36,6 +36,14 @@
         "link": "/shop"
       },
       {
+        "label": "Products",
+        "link": "/products"
+      },
+      {
+        "label": "Cart",
+        "link": "/cart"
+      },
+      {
         "label": "Contact",
         "link": "/contact",
         "children": 0

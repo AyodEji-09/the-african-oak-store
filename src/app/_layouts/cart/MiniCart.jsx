@@ -12,7 +12,7 @@ const MiniCart = () => {
                     <i className="fas fa-arrow-down" />
                 </div>
                 {CartData.items.map((item, key) => (
-                <Link href="/product" className="sb-menu-item sb-menu-item-sm sb-mb-15" key={`mini-cart-item-${key}`}>
+                <div className="sb-menu-item sb-menu-item-sm sb-mb-15" key={`mini-cart-item-${key}`}>
                     <div className="sb-cover-frame">
                         <img src={item.image} alt={item.title} />
                     </div>
@@ -20,12 +20,12 @@ const MiniCart = () => {
                         <h4 className="sb-card-title">{item.title}</h4>
                         <div className="sb-price">{item.currency} {item.price}</div>
                     </div>
-                </Link>
+                </div>
                 ))}
             </div>
             <div className="sb-minicart-footer">
                 {/* button */}
-                <Link href="/cart" className="sb-btn sb-btn-gray sb-btn-text">
+                <Link href="/cart" className="sb-btn  sb-btn-text">
                     <span>View order</span>
                 </Link>
                 {/* button end */}

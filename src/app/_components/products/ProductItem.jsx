@@ -6,25 +6,17 @@ import { useState, useEffect } from "react";
 import CartData from "@data/cart.json";
 
 const ProductItem = ({ item, index, marginBottom, moreType }) => {
-  const [cartTotal, setCartTotal] = useState(CartData.total);
-  const [quantity, setQuantity] = useState(1);
-
-  useEffect(() => {
-    const cartNumberEl = document.querySelector(".sb-cart-number");
-    cartNumberEl.innerHTML = cartTotal;
-  }, [cartTotal]);
-
-  const addToCart = (e) => {
+  const addToCart = (e, item) => {
     e.preventDefault();
     const cartNumberEl = document.querySelector(".sb-cart-number");
-    setCartTotal(cartTotal + quantity);
-
-    cartNumberEl.classList.add("sb-added");
     e.currentTarget.classList.add("sb-added");
-
     setTimeout(() => {
       cartNumberEl.classList.remove("sb-added");
     }, 600);
+
+    //
+    // const cartItems = window.localStorage.setItem('SHOPOAKSTORE_CART_ITEMS', [])
+    // console.log(item);
   };
 
   return (
@@ -67,7 +59,7 @@ const ProductItem = ({ item, index, marginBottom, moreType }) => {
           <a
             href="#."
             className="sb-btn sb-atc w-100 d-flex"
-            onClick={(e) => addToCart(e)}
+            onClick={(e) => addToCart(e, item)}
           >
             <span className="sb-icon">
               <img src="/img/ui/icons/cart.svg" alt="icon" />

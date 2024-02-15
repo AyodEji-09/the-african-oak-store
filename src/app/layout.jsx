@@ -40,8 +40,8 @@ export const metadata = {
 
 const Layouts = ({ children }) => {
   return (
-    <html lang="en" className={`${monoton.variable}`}>
-      <body className={poppins.className}>
+    <html lang="en" className={`${poppins.className}`}>
+      <body>
         {/* app wrapper */}
         <div className="sb-app">
           {children}

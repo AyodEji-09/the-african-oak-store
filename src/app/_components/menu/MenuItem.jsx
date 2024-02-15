@@ -21,18 +21,18 @@ const MenuItem = ({ item, index, noImage, marginBottom }) => {
         }
         <div className="sb-card-tp">
             <h4 className="sb-card-title">{item.title}</h4>
-            <div className="sb-price"><sub>{item.currency}</sub> {item.price}</div>
+            <div className="sb-price"> {item.currency}{item.price}</div>
         </div>
         <div className="sb-description">
             <p className="sb-text sb-mb-15">
                 {item.text}
             </p>
-            <ul className="sb-stars">
+            {/* <ul className="sb-stars">
                 {stars.slice(0, item.rating).map((star_item, star_key) => (
                 <li key={`products-item-${index}-rating-star-${star_key}`}><i className="fas fa-star"></i></li>
                 ))}
                 <li><span>({item.rating} ratings)</span></li>
-            </ul>
+            </ul> */}
         </div>
       </a>
       

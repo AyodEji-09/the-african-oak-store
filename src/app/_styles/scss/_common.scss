@@ -663,11 +663,12 @@ buttons
   transform: scale(1);
   height: 55px;
   letter-spacing: 0;
-  font-size: 14px;
+  font-size: 0.9rem;
   margin-right: 15px;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   background-color: $c5;
   transition: $tr;
+  color: #fff;
 
   & .sb-icon {
     border-radius: 50%;

@@ -5,7 +5,7 @@ import ProductsData from "@data/products.json";
 
 import PageBanner from "@components/PageBanner";
 import ProductsGrid from "@components/products/ProductsGrid";
-import PromoSection from "@components/sections/Promo";
+// import PromoSection from "@components/sections/Promo";
 
 export const metadata = {
   title: {
@@ -27,7 +27,7 @@ const Products = () => {
         <div className="container">
           <ProductsGrid items={ProductsData.items} />
 
-          <div>
+          {/* <div>
             <ul className="sb-pagination">
               <li className="sb-active"><a href="#.">1</a></li>
               <li><a href="#">2</a></li>
@@ -35,12 +35,12 @@ const Products = () => {
               <li><a href="#">4</a></li>
               <li><a href="#">...</a></li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* shop list end */}
 
-      <PromoSection />
+      {/* <PromoSection /> */}
     </>
   );
 };

@@ -43,7 +43,7 @@ const CartItem = ({ item, key }) => {
                         <img src={item.image} alt={item.title} />
                     </div>
                     <div className="sb-prod-description">
-                        <h4 className="media-heading sb-mb-10"></h4>
+                        {/* <h4 className="media-heading sb-mb-10"></h4> */}
                         <p className="sb-text sb-text-sm">{item.description}</p>
                     </div>
                 </Link>

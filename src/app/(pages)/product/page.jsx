@@ -138,7 +138,7 @@ const Products = () => {
               <div className="sb-product-description sb-mb-90">
                 <div className="sb-price-frame sb-mb-30">
                   <h3>Saumon Gravlax</h3>
-                  <div className="sb-price"><sub>$</sub> 19</div>
+                  <div className="sb-price">$ 19</div>
                 </div>
                 <ul className="sb-stars sb-mb-25">
                   <li><i className="fas fa-star"></i></li>

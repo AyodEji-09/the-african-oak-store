@@ -27,7 +27,7 @@ const Hero = () => {
                   <span className="sb-suptitle sb-mb-30">{Data.subtitle}</span>
                   <h1 className="sb-mb-30">
                     Explore the <br /> vibrant
-                    <span class="text-primary"> yummy flavors </span> of Africa.
+                    <span className="text-primary"> yummy flavors </span> of Africa.
                   </h1>
 
                   <p className="sb-text sb-text-lg sb-mb-30 fw-normal">

@@ -3,7 +3,7 @@ import React from "react";
 import AppData from "@data/app.json";
 
 import ContactInfoSection from "@components/sections/ContactInfo";
-import ContactMapSection from "@components/sections/ContactMap";
+// import ContactMapSection from "@components/sections/ContactMap";
 import ContactForm from "@components/forms/ContactForm";
 
 import Link from "next/link";
@@ -78,7 +78,7 @@ const Contact = () => {
 
         <ContactInfoSection />
 
-        <ContactMapSection />
+        {/* <ContactMapSection /> */}
     </>
   );
 };

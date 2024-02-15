@@ -10,58 +10,65 @@ const ProductItem = ({ item, index, marginBottom, moreType }) => {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    const cartNumberEl = document.querySelector('.sb-cart-number');
+    const cartNumberEl = document.querySelector(".sb-cart-number");
     cartNumberEl.innerHTML = cartTotal;
   }, [cartTotal]);
 
   const addToCart = (e) => {
     e.preventDefault();
-    const cartNumberEl = document.querySelector('.sb-cart-number');
+    const cartNumberEl = document.querySelector(".sb-cart-number");
     setCartTotal(cartTotal + quantity);
 
-    cartNumberEl.classList.add('sb-added');
-    e.currentTarget.classList.add('sb-added');
-    
+    cartNumberEl.classList.add("sb-added");
+    e.currentTarget.classList.add("sb-added");
+
     setTimeout(() => {
-        cartNumberEl.classList.remove('sb-added');
+      cartNumberEl.classList.remove("sb-added");
     }, 600);
-  }
-  
+  };
+
   return (
-    <>   
+    <>
       <div className={`sb-menu-item sb-mb-${marginBottom}`}>
-        <Link href={`/product`} className="sb-cover-frame">
-            <img src={item.image} alt={item.title} />
-            <div dangerouslySetInnerHTML={{__html : item.badge}} />
-        </Link>
+        <div className="sb-cover-frame">
+          <img src={item.image} alt={item.title} />
+          <div dangerouslySetInnerHTML={{ __html: item.badge }} />
+        </div>
         <div className="sb-card-tp">
-            <h4 className="sb-card-title"><Link href={`/product`}>{item.title}</Link></h4>
-            <div className="sb-price"><sub>{item.currency}</sub> {item.price}</div>
+          <h4 className="sb-card-title">{item.title}</h4>
+          <div className="sb-price">
+            {item.currency} {item.price}
+          </div>
         </div>
         <div className="sb-description">
-            <p className="sb-text sb-mb-15">
-                {item.text}
-            </p>
+          <p className="sb-text sb-mb-15">{item.text}</p>
         </div>
         <div className="sb-card-buttons-frame">
           {/* button */}
-          {moreType != 2 ? (
-          <Link href="/product" className="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0">
-            <span className="sb-icon">
-              <img src="/img/ui/icons/arrow.svg" alt="icon" />
-            </span>
-          </Link>
+          {/* {moreType != 2 ? (
+            <Link
+              href="#."
+              className="sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0"
+            >
+              <span className="sb-icon">
+                <img src="/img/ui/icons/arrow.svg" alt="icon" />
+              </span>
+            </Link>
           ) : (
-          <Link href="/product" className="sb-btn sb-btn-gray">
-            <span className="sb-icon">
-              <img src="/img/ui/icons/arrow.svg" alt="icon" />
-            </span>
-            <span>Details</span>
-          </Link>
-          )}
+            <Link href="#." className="sb-btn sb-btn-gray">
+              <span className="sb-icon">
+                <img src="/img/ui/icons/arrow.svg" alt="icon" />
+              </span>
+              <span>Details</span>
+            </Link>
+          )} */}
           {/* button end */}
           {/* button */}
-          <a href="#." className="sb-btn sb-atc" onClick={(e) => addToCart(e) }>
+          <a
+            href="#."
+            className="sb-btn sb-atc w-100 d-flex"
+            onClick={(e) => addToCart(e)}
+          >
             <span className="sb-icon">
               <img src="/img/ui/icons/cart.svg" alt="icon" />
             </span>

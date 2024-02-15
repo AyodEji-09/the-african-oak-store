@@ -240,18 +240,20 @@ menu
     }
 
     & .sb-price {
-      width: 60px;
-      height: 60px;
-      font-weight: 500;
+      // width: 60px;
+      // height: 60px;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: 400;
       background-color: $c5;
-      font-size: 24px;
+      font-size: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
 
       & sub {
-        font-size: 12px;
-        font-weight: 400;
+        // font-size: 12px;
+        // font-weight: 400;
       }
     }
   }

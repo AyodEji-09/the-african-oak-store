@@ -27,7 +27,7 @@ const Shop = () => {
       <PageBanner pageTitle={"Online Store"} breadTitle={"Shop"} type={1} />
       <CategoriesSection heading={0} paddingTop={90} />
       <ProductsSlider
-        items={Products.collection["popular"]}
+        items={Products.items}
         title={"Most <span>popular</span> foodstuffs"}
         description={
           "Embark on a culinary journey through the most beloved flavors of Africa with our selection of popular foodstuffs. At The African Oak Store, we celebrate the richness and diversity of African cuisine, bringing you the most sought-after ingredients and delicacies that capture the essence of our culinary heritage. "
@@ -41,7 +41,7 @@ const Shop = () => {
         itemType={"product"}
       />
       <ProductsSlider
-        items={Products.collection["bestseller"]}
+        items={Products.items}
         title={"Our <span>Bestsellers</span>"}
         description={
           "Discover vibrant flavors and rich traditions in this collection of irresistible African culinary delights. Savor the essence of Africa's cuisine."
@@ -61,7 +61,6 @@ const Shop = () => {
       <div className="my-5">
         <TeamSection />
       </div>
-
       {/* <PromoSection /> */}
     </>
   );

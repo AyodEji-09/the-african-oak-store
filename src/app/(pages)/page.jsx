@@ -25,7 +25,7 @@ async function Home1() {
       <HeroSection type={2} />
       <AboutSection />
       <CategoriesSection />
-      <ProductsSlider items={Products.collection['popular']} slidesPerView={4} />
+      <ProductsSlider items={Products.items} slidesPerView={4} />
       {/* <TeamSection /> */}
       {/* <CallToActionSection /> */}
     </>

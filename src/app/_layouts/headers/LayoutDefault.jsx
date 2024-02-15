@@ -21,8 +21,10 @@ const DefaultHeader = () => {
     return (asPath.endsWith(path) == 1 && path !== "/") || asPath === path;
   };
 
-  const cartItems = window.localStorage.getItem("SHOPOAKSTORE_CART_ITEMS");
-  console.log(cartItems);
+  const cartItems = []
+
+//   const cartItems = window.localStorage.getItem("SHOPOAKSTORE_CART_ITEMS");
+//   console.log(cartItems);
 
   const handleSubMenuClick = (index, e) => {
     if (window !== undefined) {

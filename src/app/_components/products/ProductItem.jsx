@@ -14,9 +14,6 @@ const ProductItem = ({ item, index, marginBottom, moreType }) => {
       cartNumberEl.classList.remove("sb-added");
     }, 600);
 
-    //
-    // const cartItems = window.localStorage.setItem('SHOPOAKSTORE_CART_ITEMS', [])
-    // console.log(item);
   };
 
   return (

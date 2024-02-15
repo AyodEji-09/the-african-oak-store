@@ -1,20 +1,3 @@
-import { Monoton, Poppins } from "next/font/google";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  display: "swap",
-});
-
-const monoton = Monoton({
-  weight: ["400"],
-  subsets: ["latin"],
-  variable: "--font-monoton",
-  display: "swap",
-});
-
 import "@styles/css/plugins/bootstrap.min.css";
 import "@styles/css/plugins/swiper.min.css";
 import "@styles/css/plugins/font-awesome.min.css";
@@ -40,7 +23,7 @@ export const metadata = {
 
 const Layouts = ({ children }) => {
   return (
-    <html lang="en" className={`${poppins.className}`}>
+    <html lang="en">
       <body>
         {/* app wrapper */}
         <div className="sb-app">

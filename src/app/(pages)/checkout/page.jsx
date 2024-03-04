@@ -1,7 +1,7 @@
 import React from "react";
 
 import AppData from "@data/app.json";
-// import CartData from "@data/cart.json";
+import CartData from "@data/cart.json";
 
 import PageBanner from "@components/PageBanner";
 import CheckoutForm from "@components/forms/CheckoutForm";

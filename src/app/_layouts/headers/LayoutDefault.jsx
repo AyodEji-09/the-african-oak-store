@@ -5,12 +5,13 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import AppData from "@data/app.json";
-import CartData from "@data/cart.json";
 
 import MiniCart from "@layouts/cart/MiniCart";
 import MiniSidebar from "@layouts/sidebar/MiniSidebar";
+import { useShoppingCart } from "use-shopping-cart";
 
 const DefaultHeader = () => {
+  const { cartCount } = useShoppingCart();
   const [mobileMenu, setMobileMenu] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(false);
   const [miniCart, setMiniCart] = useState(false);
@@ -20,11 +21,6 @@ const DefaultHeader = () => {
   const isPathActive = (path) => {
     return (asPath.endsWith(path) == 1 && path !== "/") || asPath === path;
   };
-
-  const cartItems = []
-
-//   const cartItems = window.localStorage.getItem("SHOPOAKSTORE_CART_ITEMS");
-//   console.log(cartItems);
 
   const handleSubMenuClick = (index, e) => {
     if (window !== undefined) {
@@ -106,14 +102,14 @@ const DefaultHeader = () => {
                   className={`sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0 sb-btn-cart ${
                     miniCart ? "sb-active" : ""
                   }`}
-                  onClick={() => setMiniCart(!miniCart)}
                 >
-                  <span className="sb-icon">
-                    <img src="/img/ui/icons/cart.svg" alt="icon" />
-                  </span>
-                  <i className="sb-cart-number">
-                    {cartItems ? cartItems.length : 0}
-                  </i>
+                  <Link href="/cart">
+                    {/* onClick={() => setMiniCart(!miniCart)} */}
+                    <span className="sb-icon">
+                      <img src="/img/ui/icons/cart.svg" alt="icon" />
+                    </span>
+                    <i className="sb-cart-number">{cartCount}</i>
+                  </Link>
                 </div>
                 {/* button end */}
                 {/* menu btn */}

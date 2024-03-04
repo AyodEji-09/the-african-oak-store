@@ -1,7 +1,7 @@
 import "@styles/css/plugins/bootstrap.min.css";
 import "@styles/css/plugins/swiper.min.css";
 import "@styles/css/plugins/font-awesome.min.css";
-
+import CartProviderComponent from "./_components/provider/CartProvider";
 import { register } from "swiper/element/bundle";
 // register Swiper custom elements
 register();
@@ -27,8 +27,7 @@ const Layouts = ({ children }) => {
       <body>
         {/* app wrapper */}
         <div className="sb-app">
-          {children}
-
+          <CartProviderComponent>{children}</CartProviderComponent>
           <ScrollbarProgress />
         </div>
         {/* app wrapper end */}

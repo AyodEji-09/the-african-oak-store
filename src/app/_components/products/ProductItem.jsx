@@ -2,18 +2,22 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-
-import CartData from "@data/cart.json";
+import { useShoppingCart } from "use-shopping-cart";
+import toast from "react-hot-toast";
 
 const ProductItem = ({ item, index, marginBottom, moreType }) => {
+  const { addItem } = useShoppingCart();
+
   const addToCart = (e, item) => {
     e.preventDefault();
+    addItem(item);
+    toast.success(`${item.title} has been added to your cart.`);
+
     const cartNumberEl = document.querySelector(".sb-cart-number");
     e.currentTarget.classList.add("sb-added");
     setTimeout(() => {
       cartNumberEl.classList.remove("sb-added");
     }, 600);
-
   };
 
   return (
@@ -26,7 +30,7 @@ const ProductItem = ({ item, index, marginBottom, moreType }) => {
         <div className="sb-card-tp">
           <h4 className="sb-card-title">{item.title}</h4>
           <div className="sb-price">
-            {item.currency} {item.price}
+            {item.currency} {item.price / 100}
           </div>
         </div>
         <div className="sb-description">

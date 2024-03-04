@@ -1,119 +1,85 @@
 {
-  "collection": {
-    "popular": [
-      {
-        "title": "Palm Oil",
-        "image": "/img/blog/TOAS EFLYER A.jpg",
-        "description": "Indulge in the rich and vibrant flavor of our premium palm oil, sourced directly from the heart of Africa. Made from carefully selected palm fruit, our palm oil adds a distinctively delicious taste to your favorite dishes. Whether you're frying, sautéing, or using it as a base for soups and sauces, our palm oil elevates your culinary creations with its bold and earthy aroma. Experience the authentic taste of Africa with every drop of our high-quality palm oil.",
-        "quantity": 1,
-        "price": "14.00",
-        "currency": "$"
-      },
-      {
-        "title": "Plantain Fufu",
-        "image": "/img/blog/PLANTAIN-1.jpg",
-        "description": "Indulge in the pure taste of Africa with our Plantain Fufu, a traditional staple made from ripe plantains. Handcrafted with care and expertise, our Plantain Fufu is meticulously processed under hygienic conditions, ensuring its natural freshness and purity. Free from preservatives and artificial additives, each bite of our Plantain Fufu delivers authentic flavor and wholesome goodness. Whether paired with savory soups or enjoyed on its own, our Plantain Fufu promises a satisfying and nourishing dining experience that celebrates the rich culinary heritage of Africa.",
-        "quantity": 1,
-        "price": "7.99",
-        "currency": "$"
-      },
-      {
-        "title": "Garri",
-        "image": "/img/blog/GARRI-1.jpg",
-        "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
-        "quantity": 1,
-        "price": "11.00",
-        "currency": "$"
-      },
-      {
-        "title": "Garri",
-        "image": "/img/blog/GARRI-1.jpg",
-        "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
-        "quantity": 1,
-        "price": "11.00",
-        "currency": "$"
-      }
-    ],
-    "bestseller": [
-      {
-        "title": "Garri",
-        "image": "/img/blog/GARRI-1.jpg",
-        "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
-        "quantity": 1,
-        "price": "11.00",
-        "currency": "$"
-      },
-      {
-        "title": "Palm Oil",
-        "image": "/img/blog/TOAS EFLYER A.jpg",
-        "description": "Indulge in the rich and vibrant flavor of our premium palm oil, sourced directly from the heart of Africa. Made from carefully selected palm fruit, our palm oil adds a distinctively delicious taste to your favorite dishes. Whether you're frying, sautéing, or using it as a base for soups and sauces, our palm oil elevates your culinary creations with its bold and earthy aroma. Experience the authentic taste of Africa with every drop of our high-quality palm oil.",
-        "quantity": 1,
-        "price": "14.00",
-        "currency": "$"
-      },
-      {
-        "title": "Plantain Fufu",
-        "image": "/img/blog/PLANTAIN-1.jpg",
-        "description": "Indulge in the pure taste of Africa with our Plantain Fufu, a traditional staple made from ripe plantains. Handcrafted with care and expertise, our Plantain Fufu is meticulously processed under hygienic conditions, ensuring its natural freshness and purity. Free from preservatives and artificial additives, each bite of our Plantain Fufu delivers authentic flavor and wholesome goodness. Whether paired with savory soups or enjoyed on its own, our Plantain Fufu promises a satisfying and nourishing dining experience that celebrates the rich culinary heritage of Africa.",
-        "quantity": 1,
-        "price": "7.99",
-        "currency": "$"
-      },
-      {
-        "title": "Garri",
-        "image": "/img/blog/GARRI-1.jpg",
-        "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
-        "quantity": 1,
-        "price": "11.00",
-        "currency": "$"
-      },
-      {
-        "title": "Garri",
-        "image": "/img/blog/GARRI-1.jpg",
-        "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
-        "quantity": 1,
-        "price": "11.00",
-        "currency": "$"
-      }
-    ]
-  },
   "items": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Palm Oil",
-      "image": "/img/blog/TOAS EFLYER A.jpg",
+      "name": "Palm Oil",
+      "price_id": "price_1OqTttEtCDYsgBGXjOiXjswZ",
+      "image": "/img/products/palm_oil.jpg",
       "description": "Indulge in the rich and vibrant flavor of our premium palm oil, sourced directly from the heart of Africa. Made from carefully selected palm fruit, our palm oil adds a distinctively delicious taste to your favorite dishes. Whether you're frying, sautéing, or using it as a base for soups and sauces, our palm oil elevates your culinary creations with its bold and earthy aroma. Experience the authentic taste of Africa with every drop of our high-quality palm oil.",
       "quantity": 1,
-      "price": "14.00",
-      "currency": "$"
+      "price": 1400,
+      "currency": "USD"
     },
     {
       "id": 2,
       "title": "Plantain Fufu",
-      "image": "/img/blog/PLANTAIN-1.jpg",
+      "name": "Plantain Fufu",
+      "image": "/img/products/plantain.jpg",
       "description": "Indulge in the pure taste of Africa with our Plantain Fufu, a traditional staple made from ripe plantains. Handcrafted with care and expertise, our Plantain Fufu is meticulously processed under hygienic conditions, ensuring its natural freshness and purity. Free from preservatives and artificial additives, each bite of our Plantain Fufu delivers authentic flavor and wholesome goodness. Whether paired with savory soups or enjoyed on its own, our Plantain Fufu promises a satisfying and nourishing dining experience that celebrates the rich culinary heritage of Africa.",
       "quantity": 1,
-      "price": "7.99",
-      "currency": "$"
+      "price": 799,
+      "currency": "USD"
     },
     {
       "id": 3,
-
       "title": "Garri",
-      "image": "/img/blog/GARRI-1.jpg",
+      "name": "Garri",
+      "image": "/img/products/garri.jpg",
       "description": "Experience the authentic taste of Nigeria with our Garri, a staple food made from processed cassava. Sourced from the finest cassava roots and expertly processed, our Garri offers a versatile and nourishing addition to your pantry. Whether enjoyed as a satisfying breakfast cereal, used as a base for traditional snacks like Garri soakings, or incorporated into savory dishes, our Garri delivers a taste of home and tradition with every bite. Rich in carbohydrates and essential nutrients, our Garri provides sustained energy and satiety, making it a beloved choice for meals and snacks across Nigeria and beyond.",
       "quantity": 1,
-      "price": "11.00",
-      "currency": "$"
+      "price": 1100,
+      "currency": "USD"
     },
     {
       "id": 4,
       "title": "Beans (Ewa Oloyin)",
-      "image": "/img/blog/EWA OLOYIN.jpg",
+      "name": "Beans (Ewa Oloyin)",
+      "image": "/img/products/ewa_oloyin.jpg",
       "description": "Ewa Oloyin, a cherished Nigerian delicacy, boasts tender honey beans simmered to perfection with a blend of spices, creating a rich and savory dish. This aromatic and hearty meal is often enjoyed with fluffy, freshly baked bread, offering a satisfying taste of traditional African cuisine.",
       "quantity": 1,
-      "price": "11.00",
-      "currency": "$"
+      "price": 2000,
+      "currency": "USD"
+    },
+    {
+      "id": 5,
+      "title": "Elubo (Egbodo)",
+      "name": "Elubo (Egbodo)",
+      "image": "/img/products/elubo.jpg",
+      "description": "",
+      "quantity": 1,
+      "price": 3000,
+      "currency": "USD"
+    },
+    {
+      "id": 6,
+      "title": "Pepper Soup (Spice)",
+      "name": "Pepper Soup (Spice)",
+      "image": "/img/products/pepper_soup.jpg",
+      "description": "",
+      "quantity": 1,
+      "price": 1000,
+      "currency": "USD"
+    },
+    {
+      "id": 7,
+      "title": "Ata Gigun (Spice)",
+      "name": "Ata Gigun (Spice)",
+      "image": "/img/products/ata.jpg",
+      "description": "",
+      "quantity": 1,
+      "price": 1000,
+      "currency": "USD"
+    },
+    {
+      "id": 8,
+      "title": "Iru",
+      "name": "Iru",
+      "image": "/img/products/iru.jpg",
+      "description": "",
+      "quantity": 1,
+      "price": 1000,
+      "currency": "USD"
     }
   ]
 }

@@ -33,8 +33,8 @@ const Shop = () => {
           "Embark on a culinary journey through the most beloved flavors of Africa with our selection of popular foodstuffs. At The African Oak Store, we celebrate the richness and diversity of African cuisine, bringing you the most sought-after ingredients and delicacies that capture the essence of our culinary heritage. "
         }
         button={{
-          link: "/shop",
-          label: "Shop",
+          link: "/products",
+          label: "All Products",
           icon: "/img/ui/icons/arrow.svg",
         }}
         slidesPerView={4}
@@ -47,8 +47,8 @@ const Shop = () => {
           "Discover vibrant flavors and rich traditions in this collection of irresistible African culinary delights. Savor the essence of Africa's cuisine."
         }
         button={{
-          link: "/shop",
-          label: "Shop",
+          link: "/products",
+          label: "All Products",
           icon: "/img/ui/icons/arrow.svg",
         }}
         slidesPerView={4}

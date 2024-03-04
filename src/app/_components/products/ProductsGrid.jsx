@@ -8,15 +8,15 @@ const ProductsGrid = ({ items, columns }) => {
   
   switch (columns) {
     case 3:
-      columnsClass = 'col-lg-4';
+      columnsClass = 'col-lg-4 col-md-6';
       moreType = 2;
       break;
     case 2:
-      columnsClass = 'col-lg-6';
+      columnsClass = 'col-lg-6 col-md-6';
       moreType = 2;
       break;
     default:
-      columnsClass = 'col-lg-3';
+      columnsClass = 'col-lg-3 col-md-6';
       moreType = 1;
   }
 

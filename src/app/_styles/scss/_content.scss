@@ -227,7 +227,7 @@ menu
     align-items: center;
 
     & .sb-card-title {
-      width: calc(100% - 90px);
+      width: calc(100% - 120px);
       overflow: hidden;
       text-overflow: ellipsis;
       display: -moz-box;
@@ -246,7 +246,7 @@ menu
       padding: 5px 10px;
       font-weight: 400;
       background-color: $c5;
-      font-size: 1rem;
+      font-size: 0.9rem;
       display: flex;
       justify-content: center;
       align-items: center;

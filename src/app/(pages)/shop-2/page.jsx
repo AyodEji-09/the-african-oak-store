@@ -25,7 +25,7 @@ const Shop2 = () => {
       <PageBanner pageTitle={"Taste the dishes of the restaurant without leaving home."} description={"Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi."} breadTitle={"Shop"} type={2} />
       <CategoriesSection heading={0} paddingTop={90} type={2} columns={4} />
       <ProductsSlider 
-        items={Products.collection['popular']} 
+        items={Products.items} 
         title={'Most <span>popular</span> dishes'} 
         description={'Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.'} 
         button={ {"link": "/products", "label": "View all", "icon": '/img/ui/icons/arrow.svg'} }
@@ -34,7 +34,7 @@ const Shop2 = () => {
       />
       <CallToActionThreeSection />
       <ProductsSlider 
-        items={Products.collection['bestseller']} 
+       items={Products.items} 
         title={'Our <span>Bestsellers</span>'} 
         description={'Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.'} 
         button={ {"link": "/products-2", "label": "View all", "icon": '/img/ui/icons/arrow.svg'} }

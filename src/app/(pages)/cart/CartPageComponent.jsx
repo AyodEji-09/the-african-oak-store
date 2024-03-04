@@ -1,5 +1,5 @@
 "use client";
-import CartItem from "@components/products/CartItem";
+import CartItem from "../../_components/products/CartItem";
 import Link from "next/link";
 import { useState } from "react";
 import { useShoppingCart } from "use-shopping-cart";

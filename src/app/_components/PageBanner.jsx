@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useSearchParams } from "next/navigation";
 
 import { useEffect } from "react";
-import { ScrollAnimation } from "@common/scrollAnims";
+import { ScrollAnimation } from "../_common/scrollAnims";
 
 const PageBanner = ({ pageTitle, breadTitle, description, type }) => {
   const asPath = usePathname();

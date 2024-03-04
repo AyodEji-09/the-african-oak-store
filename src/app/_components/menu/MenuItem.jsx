@@ -32,7 +32,7 @@ const MenuItem = ({ item, index, noImage, marginBottom }) => {
         <div className="sb-card-tp">
           <h4 className="sb-card-title">{item.title}</h4>
           <div className="sb-price">
-            {/* {item.currency} {""} */}${item.price / 100}
+            {/* {item.currency} {""} */}${(item.price / 100).toFixed(2)}
           </div>
         </div>
         <div className="sb-description">

@@ -1,5 +1,5 @@
-import AppData from "@data/app.json";
-import PageBanner from "@components/PageBanner";
+import AppData from "../../../data/app.json";
+import PageBanner from "../../_components/PageBanner";
 import CartPageComponent from "./CartPageComponent";
 
 

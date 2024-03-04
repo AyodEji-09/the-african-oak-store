@@ -1,6 +1,6 @@
 "use client";
 
-import CartData from "@data/cart.json";
+import CartData from "../../../data/cart.json";
 import Link from "next/link";
 
 const MiniCart = () => {

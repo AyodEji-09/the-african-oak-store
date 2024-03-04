@@ -1,4 +1,4 @@
-import AppData from "@data/app.json";
+import AppData from "../../../data/app.json";
 import Link from "next/link";
 
 import PostsData from "@data/.json/posts";

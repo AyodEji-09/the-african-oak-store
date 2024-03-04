@@ -1,5 +1,5 @@
-import Header from "@layouts/headers/Index";
-import Footer from "@layouts/footers/Index";
+import Header from "../_layouts/headers/Index";
+import Footer from "../_layouts/footers/Index";
 
 const PagesLayouts = ({
   children

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import AppData from "@data/app.json";
+import AppData from "../../../data/app.json";
 import Image from "next/image";
 
 const DefaultFooter = () => {

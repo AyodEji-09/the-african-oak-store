@@ -4,10 +4,9 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
-import AppData from "@data/app.json";
-
-import MiniCart from "@layouts/cart/MiniCart";
-import MiniSidebar from "@layouts/sidebar/MiniSidebar";
+import AppData from "../../../data/app.json";
+import MiniCart from "../../_layouts/cart/MiniCart";
+import MiniSidebar from "../../_layouts/sidebar/MiniSidebar";
 import { useShoppingCart } from "use-shopping-cart";
 
 const DefaultHeader = () => {

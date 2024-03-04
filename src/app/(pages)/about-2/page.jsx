@@ -5,10 +5,10 @@ import AppData from '../../../data/app.json';
 
 import PageBanner from "../../_components/PageBanner";;
 import AboutTwoSection from "../../_components/sections/AboutTwo";
-import FeaturesOneSection from "@/src/app/_components/sections/Features";
-import PromoVideoSection from "@components/sections/PromoVideo";
-import TeamSection from "@components/sections/Team";
-import CallToActionSection from "@components/sections/CallToAction";
+import FeaturesOneSection from '../../_components/sections/Features'
+import PromoVideoSection from "../../_components/sections/PromoVideo";
+import TeamSection from "../../_components/sections/Team";
+import CallToActionSection from "../../_components/sections/CallToAction";
 
 const TestimonialSlider = dynamic( () => import("@components/sliders/Testimonial"), { ssr: false } );
 

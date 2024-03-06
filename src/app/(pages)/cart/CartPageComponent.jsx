@@ -1,41 +1,11 @@
 "use client";
 import CartItem from "../../_components/products/CartItem";
 import Link from "next/link";
-import { useState } from "react";
 import { useShoppingCart } from "use-shopping-cart";
-import { loadStripe } from "@stripe/stripe-js";
 
 const CartPageComponent = () => {
   const { cartDetails, totalPrice, cartCount, clearCart } = useShoppingCart();
 
-  const handleClick = async (e) => {
-    e.preventDefault();
-    try {
-      const stripe = await loadStripe(
-        process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-      );
-
-      if (!stripe) throw new Error("Stripe failed to initialize.");
-
-      const checkoutResponse = await fetch("/api/checkout_sessions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ cartDetails }),
-      });
-
-      const { sessionId } = await checkoutResponse.json();
-      const stripeError = await stripe.redirectToCheckout({ sessionId });
-
-      if (stripeError) {
-        console.error({ stripeError });
-      }
-      clearCart();
-    } catch (error) {
-      console.error({ error });
-    }
-  };
   return (
     <>
       <section className="sb-p-90-90">
@@ -118,12 +88,12 @@ const CartPageComponent = () => {
                     </Link>
                     {/* button end */}
                     {/* button */}
-                    <button onClick={handleClick} className="sb-btn sb-m-0">
+                    <Link href={"/checkout"} className="sb-btn sb-m-0">
                       <span className="sb-icon">
                         <img src="/img/ui/icons/arrow.svg" alt="icon" />
                       </span>
                       <span>Checkout</span>
-                    </button>
+                    </Link>
                     {/* button end */}
                   </div>
                 </div>

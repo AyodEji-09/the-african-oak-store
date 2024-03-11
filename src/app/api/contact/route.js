@@ -1,13 +1,14 @@
 import { NextResponse } from "next/server";
 const client = require("@sendgrid/mail");
 import { adminOrderNotification } from "../../_lib/emailTemplates/adminOrderNotification";
+import { checkMessage } from "../../_lib/emailTemplates/checkMessage";
 
 client.setApiKey(process.env.SENDGRID_API_KEY);
 const adminEmail = process.env.ADMIN_EMAIL;
 
 export async function POST(request) {
   const body = await request.json();
-  const { firstname, email, subject, message } = body;
+  const { firstname, email, subject, message,address } = body;
   if (!firstname && !email && !subject && !message) {
     return NextResponse.json(
       {
@@ -37,7 +38,7 @@ export async function POST(request) {
       content: [
         {
           type: "text/html",
-          value: adminOrderNotification(firstname, email, message),
+          value: checkMessage(firstname, email, message,address),
         },
       ],
     };

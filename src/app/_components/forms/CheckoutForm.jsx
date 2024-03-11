@@ -47,20 +47,20 @@ const CheckoutForm = () => {
       toast.success("Your order has been recieved", {
         duration: 5000,
       });
-      const checkoutResponse = await fetch("/api/checkout_sessions", {
+      /* const checkoutResponse = await fetch("/api/checkout_sessions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ cartDetails }),
-      });
-      const { sessionId } = await checkoutResponse.json();
-      const stripeError = await stripe.redirectToCheckout({ sessionId });
+      }); */
+      // const { sessionId } = await checkoutResponse.json();
+      // const stripeError = await stripe.redirectToCheckout({ sessionId });
 
-      if (stripeError) {
-        console.error({ stripeError });
-      }
-      clearCart();
+      // if (stripeError) {
+      //   console.error({ stripeError });
+      // }
+      // clearCart();
     } catch (error) {
       console.error({ error });
     }

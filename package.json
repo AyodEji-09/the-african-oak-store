@@ -12,6 +12,7 @@
     "@sendgrid/mail": "^8.1.1",
     "@stripe/stripe-js": "^3.0.6",
     "date-fns": "^3.2.0",
+    "dotenv": "^16.4.5",
     "formik": "^2.4.5",
     "gray-matter": "^4.0.3",
     "isotope-layout": "^3.0.6",

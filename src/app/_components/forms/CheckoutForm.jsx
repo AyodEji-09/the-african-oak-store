@@ -6,6 +6,8 @@ import toast from "react-hot-toast";
 
 const CheckoutForm = () => {
   const { cartDetails, totalPrice, cartCount, clearCart } = useShoppingCart();
+  const taxFee = 7.25
+  const TotalPrice = totalPrice + (taxFee * totalPrice)/100 
 
   const [values, setValues] = useState({
     firstname: "",
@@ -20,6 +22,10 @@ const CheckoutForm = () => {
     postcode: "",
     message: "",
     subject: "Order Confirmation",
+    totalPrice:totalPrice,
+    cartCount:cartCount,
+    cartDetails:cartDetails,
+    payment:parseFloat(TotalPrice/100).toFixed(2),
     payment_method: 1,
   });
 

@@ -8,6 +8,7 @@ const CheckoutForm = () => {
   const { cartDetails, totalPrice, cartCount, clearCart } = useShoppingCart();
   const taxFee = 7.25
   const TotalPrice = totalPrice + (taxFee * totalPrice)/100 
+  const adminEmail = process.env.ADMIN_EMAIL;
 
   const [values, setValues] = useState({
     firstname: "",
@@ -27,6 +28,7 @@ const CheckoutForm = () => {
     cartDetails:cartDetails,
     payment:parseFloat(TotalPrice/100).toFixed(2),
     payment_method: 1,
+    userType:adminEmail
   });
 
   const handleChange = (e) => {

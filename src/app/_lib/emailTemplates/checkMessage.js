@@ -1,6 +1,6 @@
 import CartItem from "../../_components/products/CartItem";
 
-export const checkMessage = (name, email, message,address,city,state,country,payment,cartCount,cartDetails,totalPrice) => {
+export const checkMessage = (name,userType, email, message,address,city,state,country,payment,cartCount,cartDetails,totalPrice) => {
     const currentDate = new Date();
     const day = currentDate.getDate();
     const month = currentDate.getMonth() + 1;
@@ -8,103 +8,105 @@ export const checkMessage = (name, email, message,address,city,state,country,pay
     const formattedDay = (day < 10) ? '0' + day : day;
     const formattedMonth = (month < 10) ? '0' + month : month;
     const formattedDateStr = formattedDay + '/ ' + formattedMonth + ' /' + year;
+    const adminEmail = process.env.ADMIN_EMAIL;
+
+
+
 
 
     const itemsHTML = Object.values(cartDetails ?? {}).map((item) => (
-        `    
-        <div key="${item.id + item.title} style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
-         <div  class="u-col u-col-29p84" style="max-width: 320px;min-width: 179.04px;display: table-cell;vertical-align: top;">
-        <div style="height: 100%;width: 100% !important;">
-        <div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
-        
-      <table id="u_content_text_79" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-        <tbody>
-          <tr>
-            <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 5px 15px;font-family:'Montserrat',sans-serif;" align="left">
-              
-        <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
-          <p style="font-size: 14px; line-height: 140%;"><strong>${item.title}</strong></p>
-        </div>
+      `
+      <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">       
+      <div key="${item.id + item.title} style="border-collapse: collapse;display:table;width: 100%;height: 100%;background-color: transparent;">
+       <div  class="u-col u-col-29p84" style="max-width: 320px;min-width: 179.04px;display: table-cell;vertical-align: top;">
+      <div style="height: 100%;width: 100% !important;">
+      <div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
       
-            </td>
-          </tr>
-        </tbody>
+    <table id="u_content_text_79" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+      <tbody>
+        <tr>
+          <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 5px 15px;font-family:'Montserrat',sans-serif; width:37px;" align="left">
+            
+      <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
+        <p style="font-size: 14px; line-height: 140%;"><strong>${item.title}</strong></p>
+      </div>
+    
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+      </div>
+    </div>
+    <!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]><td align="center" width="135" style="width: 135px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+    <div class="u-col u-col-22p66" style="max-width: 320px;min-width: 135.96px;display: table-cell;vertical-align: top;">
+      <div style="height: 100%;width: 100% !important;">
+      <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+      
+    <table id="u_content_text_74" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+      <tbody>
+        <tr>
+          <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:5px 5px 5px 5px;font-family:'Montserrat',sans-serif;width:10px;" align="left">
+            
+      <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; width:100%;  text-align: left; word-wrap: break-word;">
+        <p style="font-size: 14px; line-height: 140%;"><strong>$${(item.price)/100}</strong></p>
+      </div>
+    
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+      </div>
+    </div>
+    <!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]><td align="center" width="127" style="width: 127px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+    <div class="u-col u-col-21p33" style="max-width: 320px;min-width: 127.98px;display: table-cell;vertical-align: top;">
+      <div style="height: 100%;width: 100% !important;">
+      <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+      
+    <table id="u_content_text_75" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+      <tbody>
+        <tr>
+          <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Montserrat',sans-serif;width:305px; " align="left">
+            
+      <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
+        <p style="font-size: 14px; line-height: 140%;"><strong>x${item.quantity}</strong></p>
+      </div>
+    
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
+      </div>
+    </div>
+    <!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]><td align="center" width="157" style="width: 157px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
+    <div class="u-col u-col-26p17" style="max-width: 320px;min-width: 157.02px;display: table-cell;vertical-align: top;">
+      <div style="height: 100%;width: 100% !important;">
+      <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
+      
+    <table id="u_content_text_76" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
+      <tbody>
+        <tr>
+          <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 15px 10px 10px;font-family:'Montserrat',sans-serif;" align="left">
+            
+      <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: right; word-wrap: break-word;">
+        <p style="font-size: 14px; line-height: 140%;"><strong>$${(item.quantity * item.price)/100}</strong></p>
+      </div></td></tr>
+      </tbody>
       </table>
-      
-        <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
-        </div>
-      </div>
-      <!--[if (mso)|(IE)]></td><![endif]-->
-      <!--[if (mso)|(IE)]><td align="center" width="135" style="width: 135px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
-      <div class="u-col u-col-22p66" style="max-width: 320px;min-width: 135.96px;display: table-cell;vertical-align: top;">
-        <div style="height: 100%;width: 100% !important;">
-        <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
-        
-      <table id="u_content_text_74" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-        <tbody>
-          <tr>
-            <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 5px 15px;font-family:'Montserrat',sans-serif;" align="left">
-              
-        <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
-          <p style="font-size: 14px; line-height: 140%;"><strong>$${(item.price)/100}</strong></p>
-        </div>
-      
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      
-        <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
-        </div>
-      </div>
-      <!--[if (mso)|(IE)]></td><![endif]-->
-      <!--[if (mso)|(IE)]><td align="center" width="127" style="width: 127px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
-      <div class="u-col u-col-21p33" style="max-width: 320px;min-width: 127.98px;display: table-cell;vertical-align: top;">
-        <div style="height: 100%;width: 100% !important;">
-        <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
-        
-      <table id="u_content_text_75" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-        <tbody>
-          <tr>
-            <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Montserrat',sans-serif;" align="left">
-              
-        <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
-          <p style="font-size: 14px; line-height: 140%;"><strong>x${item.quantity}</strong></p>
-        </div>
-      
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      
-        <!--[if (!mso)&(!IE)]><!--></div><!--<![endif]-->
-        </div>
-      </div>
-      <!--[if (mso)|(IE)]></td><![endif]-->
-      <!--[if (mso)|(IE)]><td align="center" width="157" style="width: 157px;padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;" valign="top"><![endif]-->
-      <div class="u-col u-col-26p17" style="max-width: 320px;min-width: 157.02px;display: table-cell;vertical-align: top;">
-        <div style="height: 100%;width: 100% !important;">
-        <!--[if (!mso)&(!IE)]><!--><div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
-        
-      <table id="u_content_text_76" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
-        <tbody>
-          <tr>
-            <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 15px 10px 10px;font-family:'Montserrat',sans-serif;" align="left">
-              
-        <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: right; word-wrap: break-word;">
-          <p style="font-size: 14px; line-height: 140%;"><strong>$${(item.quantity * item.price)/100}</strong></p>
-        </div>
-      
-            </td>
-          </tr>
-        </tbody>
-      </table>
-        </div>
       </div>
       </div>
-       `
-      ));
-
+      </div>
+      </div>
+      `
+  )).join('');
     
     return` 
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -312,7 +314,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
   
   
 <div class="u-row-container" style="padding: 0px;background-color: transparent">
-  <div class="u-row" style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: #2cb4f3;">
+  <div class="u-row" style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: #FFF;">
     <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">
       <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding: 0px;background-color: transparent;" align="center"><table cellpadding="0" cellspacing="0" border="0" style="width:600px;"><tr style="background-color: #2cb4f3;"><![endif]-->
       
@@ -370,7 +372,13 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
       <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:30px 10px 10px 15px;font-family:'Montserrat',sans-serif;" align="left">
         
   <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
-    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 16px; line-height: 22.4px;"><strong><span style="font-family: Montserrat, sans-serif; line-height: 22.4px; font-size: 16px;">Dear ${name},</span></strong></span></p>
+    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 16px; line-height: 22.4px;">
+    ${email === "abiodunsamyemi@gmail.com"? `
+    <span style="font-size: 16px; line-height: 22.4px;"><strong><span style="font-family: Montserrat, sans-serif; line-height: 22.4px; font-size: 16px;">Hi, Admin</span></strong></span>
+  ` : `
+    <span style="font-size: 16px; line-height: 22.4px;"><strong><span style="font-family: Montserrat, sans-serif; line-height: 22.4px; font-size: 16px;">Dear ${name}</span></strong></span>
+  `}
+    <strong><span style="font-family: Montserrat, sans-serif; line-height: 22.4px; font-size: 16px;">,</span></strong></span></p>
   </div>
 
       </td>
@@ -444,7 +452,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
       <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:18px;font-family:'Montserrat',sans-serif;" align="left">
         
   <div class="v-text-align v-line-height" style="font-size: 13px; line-height: 600%; text-align: right; word-wrap: break-word;">
-    <p style="line-height: 180%;"><span style="text-decoration: underline; line-height: 23.4px;">theoakafricastore@gmail.com</span></p>
+    <p style="line-height: 180%;  color: #ffffff"><span style="text-decoration: underline; line-height: 23.4px; color:"#fff">theoakafricastore@gmail.com</span></p>
 <p style="line-height: 180%;"> </p>
   </div>
 
@@ -670,7 +678,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 <table id="u_content_text_22" style="font-family:'Montserrat',sans-serif;" role="presentation" cellpadding="0" cellspacing="0" width="100%" border="0">
   <tbody>
     <tr>
-      <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Montserrat',sans-serif;" align="left">
+      <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Montserrat',sans-serif;" align="right">
         
   <div class="v-text-align v-line-height" style="font-size: 14px; color: #0d83dd; line-height: 140%; text-align: left; word-wrap: break-word;">
     <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 12px; line-height: 16.8px;"><strong> Price</strong></span></p>
@@ -741,9 +749,7 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
   
     <div class="u-row-container" style="padding: 0px;background-color: transparent">
     <div class="u-row no-stack" style="margin: 0 auto;min-width: 320px;max-width: 600px;overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;background-color: #ffffff;">
-    <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">   
     ${itemsHTML}
-    </div>
     </div>
     </div>
   

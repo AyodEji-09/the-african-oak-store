@@ -9,7 +9,7 @@ const adminEmail = process.env.ADMIN_EMAIL;
 
 export async function POST(request) {
   const body = await request.json();
-  const { firstname, email, subject, message,address,city,state,country,payment,cartDetails,cartCount,totalPrice} = body;
+  const { firstname, email, subject, message,address,city,state,country,payment,cartDetails,cartCount,totalPrice,userType} = body;
   if (!firstname && !email && !subject && !message) {
     return NextResponse.json(
       {
@@ -28,6 +28,10 @@ export async function POST(request) {
               email: adminEmail,
               name: "The Oak African Store",
             },
+            {
+              email:email,
+              name:"the Oak African Store"
+            },
           ],
         },
       ],
@@ -39,8 +43,8 @@ export async function POST(request) {
       content: [
         {
           type: "text/html",
-          value: checkMessage(firstname, email, message,address,city ,state,country,payment,cartCount,cartDetails,totalPrice),
-        },
+          value:checkMessage(firstname, email, message,address,city ,state,country,payment,cartCount,cartDetails,totalPrice,userType)
+        }
       ],
     };
     const res = await client.send(adminMail);

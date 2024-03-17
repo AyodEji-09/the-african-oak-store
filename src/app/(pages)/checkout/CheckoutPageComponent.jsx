@@ -4,7 +4,7 @@ import CheckoutForm from "@components/forms/CheckoutForm";
 import Link from "next/link";
 
 const CheckoutPageComponent = () => {
-  const { cartDetails, totalPrice, cartCount, clearCart } = useShoppingCart();
+  const { cartDetails, totalPrice, cartCount } = useShoppingCart();
 
   return (
     <>
@@ -67,7 +67,7 @@ const CheckoutPageComponent = () => {
                           </div>
                           <div className="col-6">
                             <div className="sb-price-1 text-right">
-                              ${totalPrice/100}
+                              ${totalPrice / 100}
                             </div>
                           </div>
                         </div>
@@ -79,7 +79,7 @@ const CheckoutPageComponent = () => {
                           </div>
                           <div className="col-6">
                             <div className="sb-price-2 text-right">
-                              ${totalPrice/100}
+                              ${totalPrice / 100}
                             </div>
                           </div>
                         </div>

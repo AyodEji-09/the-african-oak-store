@@ -3,6 +3,7 @@ import "@styles/css/plugins/swiper.min.css";
 import "@styles/css/plugins/font-awesome.min.css";
 import CartProviderComponent from "./_components/provider/CartProvider";
 import { register } from "swiper/element/bundle";
+
 // register Swiper custom elements
 register();
 

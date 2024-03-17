@@ -1,11 +1,16 @@
 "use client";
 import { loadStripe } from "@stripe/stripe-js";
 import { useShoppingCart } from "use-shopping-cart";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
+import { getCarriers } from "../../_lib/shipstationApi";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const CheckoutForm = () => {
   const { cartDetails, totalPrice, cartCount, clearCart } = useShoppingCart();
+  const [carriers, setCarriers] = useState([]);
+  const [loadingCarriers, setLoadingCarriers] = useState(false);
 
   const [values, setValues] = useState({
     firstname: "",
@@ -21,10 +26,12 @@ const CheckoutForm = () => {
     message: "",
     subject: "Order Confirmation",
     payment_method: 1,
+    carrier: "",
   });
 
   const handleChange = (e) => {
-    const { value, name } = e.target;
+    let { value, name, type } = e.target;
+    console.log({ value, name, type });
     setValues((prev) => {
       return { ...prev, [name]: value };
     });
@@ -32,11 +39,9 @@ const CheckoutForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log({ values });
+    return;
     try {
-      const stripe = await loadStripe(
-        process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
-      );
-      if (!stripe) throw new Error("Stripe failed to initialize.");
       const res = await fetch("/api/contact", {
         method: "POST",
         body: JSON.stringify(values),
@@ -44,27 +49,44 @@ const CheckoutForm = () => {
           "Content-Type": "application/json",
         },
       });
+
+      // const stripe = await loadStripe(
+      //   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+      // );
+      // if (!stripe) throw new Error("Stripe failed to initialize.");
+
       toast.success("Your order has been recieved", {
         duration: 5000,
       });
-      const checkoutResponse = await fetch("/api/checkout_sessions", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ cartDetails }),
-      });
-      const { sessionId } = await checkoutResponse.json();
-      const stripeError = await stripe.redirectToCheckout({ sessionId });
+      // const checkoutResponse = await fetch("/api/checkout_sessions", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({ cartDetails }),
+      // });
+      // const { sessionId } = await checkoutResponse.json();
+      // const stripeError = await stripe.redirectToCheckout({ sessionId });
 
-      if (stripeError) {
-        console.error({ stripeError });
-      }
+      // if (stripeError) {
+      //   console.error({ stripeError });
+      // }
       clearCart();
     } catch (error) {
       console.error({ error });
     }
   };
+
+  const Carriers = async () => {
+    setLoadingCarriers(true);
+    const res = await getCarriers();
+    setCarriers(res);
+    setLoadingCarriers(false);
+  };
+
+  useEffect(() => {
+    Carriers();
+  }, []);
 
   return (
     <>
@@ -213,8 +235,37 @@ const CheckoutForm = () => {
             </div>
           </div>
         </div>
+        <hr />
         <div className="sb-mb-30">
-          <h3>Additional information</h3>
+          <h4>Select Preffered Carriers - Shipping Option </h4>
+        </div>
+        <div className="">
+          {loadingCarriers && (
+            <Skeleton count={5} height={25} className="mb-1" />
+          )}
+          {carriers?.map((carrier) => (
+            <div key={carrier.shippingProviderId} className="form-check my-1">
+              <input
+                className="form-check-input"
+                type="radio"
+                onChange={handleChange}
+                value={carrier.shippingProviderId}
+                name="carrier"
+                id={carrier.shippingProviderId}
+              />
+              <label
+                className="form-check-label"
+                htmlFor={carrier.shippingProviderId}
+              >
+                {carrier.name}
+              </label>
+            </div>
+          ))}
+        </div>
+        <hr />
+
+        <div className="sb-mb-30 my-4">
+          <h4>Additional information</h4>
         </div>
         <div className="sb-group-input">
           <textarea
@@ -227,12 +278,19 @@ const CheckoutForm = () => {
           <label>Order notes</label>
         </div>
         {/* button */}
-        <button onClick={handleSubmit} type="submit" className="sb-btn sb-m-0">
-          <span className="sb-icon">
-            <img src="/img/ui/icons/arrow.svg" alt="icon" />
-          </span>
-          <span>Place order</span>
-        </button>
+        {cartCount > 0 && (
+          <button
+            onClick={handleSubmit}
+            type="submit"
+            className="sb-btn sb-m-0"
+          >
+            <span className="sb-icon">
+              <img src="/img/ui/icons/arrow.svg" alt="icon" />
+            </span>
+            <span>Place order</span>
+          </button>
+        )}
+
         {/* button end */}
       </form>
     </>

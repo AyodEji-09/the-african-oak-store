@@ -7,7 +7,6 @@ const PagesLayouts = ({ children }) => {
       <Header layout={"default"} />
       {/* dynamic content */}
       <div
-        style={{ textDecoration: "none !important" }}
         id="sb-dynamic-content"
         className="sb-transition-fade"
       >

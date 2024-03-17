@@ -11,6 +11,8 @@ const CheckoutForm = () => {
   const { cartDetails, totalPrice, cartCount, clearCart } = useShoppingCart();
   const [carriers, setCarriers] = useState([]);
   const [loadingCarriers, setLoadingCarriers] = useState(false);
+  const TotalPrice = totalPrice * 100;
+  const adminEmail = process.env.ADMIN_EMAIL;
 
   const [values, setValues] = useState({
     firstname: "",
@@ -25,8 +27,13 @@ const CheckoutForm = () => {
     postcode: "",
     message: "",
     subject: "Order Confirmation",
+    totalPrice: totalPrice,
+    cartCount: cartCount,
+    cartDetails: cartDetails,
+    payment: parseFloat(TotalPrice / 100).toFixed(2),
     payment_method: 1,
     carrier: "",
+    userType: adminEmail,
   });
 
   const handleChange = (e) => {
@@ -58,20 +65,20 @@ const CheckoutForm = () => {
       toast.success("Your order has been recieved", {
         duration: 5000,
       });
-      // const checkoutResponse = await fetch("/api/checkout_sessions", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({ cartDetails }),
-      // });
+      /* const checkoutResponse = await fetch("/api/checkout_sessions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ cartDetails }),
+      }); */
       // const { sessionId } = await checkoutResponse.json();
       // const stripeError = await stripe.redirectToCheckout({ sessionId });
 
       // if (stripeError) {
       //   console.error({ stripeError });
       // }
-      clearCart();
+      // clearCart();
     } catch (error) {
       console.error({ error });
     }

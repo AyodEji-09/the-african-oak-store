@@ -4,7 +4,9 @@ import CheckoutForm from "@components/forms/CheckoutForm";
 import Link from "next/link";
 
 const CheckoutPageComponent = () => {
-  const { cartDetails, totalPrice, cartCount } = useShoppingCart();
+  const { cartDetails, totalPrice, cartCount, clearCart } = useShoppingCart();
+  // const taxFee = 7.25;
+  // const TotalPrice = totalPrice + (taxFee * totalPrice)/100 
 
   return (
     <>
@@ -47,7 +49,7 @@ const CheckoutPageComponent = () => {
                               <div className="sb-price-2">
                                 <span>Total: </span>
                                 {item.currency}
-                                {item.price / 100}
+                                {item.price }
                               </div>
                             </div>
                           </div>
@@ -72,6 +74,19 @@ const CheckoutPageComponent = () => {
                           </div>
                         </div>
                       </div>
+{/* ------------------------------------Tax fee------------------------------------------- */}
+                      {/* <div className="sb-sum">
+                        <div className="row">
+                          <div className="col-6">
+                            <div className="sb-total-title">Tax Fee:</div>
+                          </div>
+                          <div className="col-6">
+                            <div className="sb-price-1 text-right">
+                              {taxFee}%
+                            </div>
+                          </div>
+                        </div>
+                      </div> */}
                       <div className="sb-realy-sum">
                         <div className="row">
                           <div className="col-6">

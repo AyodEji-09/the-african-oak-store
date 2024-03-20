@@ -27,7 +27,7 @@ export async function POST(request) {
       From: "contact@superoagrobase.com",
       To: 'contact@superoagrobase.com',
       Subject: "Test",
-      TextBody: "Hello from Postmark!",
+      HtmlBody: "<p>Hello from Postmark!</p>",
     });
     // const adminMail = {
     //   personalizations: [

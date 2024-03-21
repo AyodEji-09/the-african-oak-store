@@ -8,7 +8,19 @@ var client = new postmark.ServerClient(serverToken);
 
 export async function POST(request) {
   const body = await request.json();
-  const { firstname, email, subject, message } = body;
+  const { 
+  firstname,
+  subject,
+  message,
+  email,
+  address,
+  city,
+  state,
+  country,
+  payment,
+  cartDetails,
+  totalPrice } = body;
+
   // if (!firstname && !email && !subject && !message) {
   //   return NextResponse.json(
   //     {
@@ -21,9 +33,17 @@ export async function POST(request) {
   try {
     client.sendEmail({
       From: "contact@superoagrobase.com",
-      To: 'contact@superoagrobase.com',
+      To: 'taiwoakinfenwa2019@gmail.com',
       Subject: "Test",
-      HtmlBody: "<p>Hello from Postmark!</p>",
+      HtmlBody:checkMessage(  
+        email,
+        address,
+        city,
+        state,
+        country,
+        payment,
+        cartDetails,
+        totalPrice),
     });
     // const adminMail = {
     //   personalizations: [

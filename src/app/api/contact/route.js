@@ -1,58 +1,68 @@
 import { NextResponse } from "next/server";
-// const client = require("@sendgrid/mail");
 var postmark = require("postmark");
-import { adminOrderNotification } from "../../_lib/emailTemplates/adminOrderNotification";
 import { checkMessage } from "../../_lib/emailTemplates/checkMessage";
-import { useShoppingCart } from "use-shopping-cart";
 
-// client.setApiKey(process.env.SENDGRID_API_KEY);
 const adminEmail = process.env.ADMIN_EMAIL;
 var serverToken = process.env.POSTMARK_API_KEY;
 var client = new postmark.ServerClient(serverToken);
 
 export async function POST(request) {
   const body = await request.json();
-  const { firstname, email, subject, message } = body;
-  // if (!firstname && !email && !subject && !message) {
-  //   return NextResponse.json(
-  //     {
-  //       data: [],
-  //       message: "error",
-  //     },
-  //     { status: 400 }
-  //   );
-  // }
+  const {
+    name,
+    email,
+    address,
+    city,
+    state,
+    country,
+    payment,
+    cartDetails,
+    totalPrice,
+  } = body;
+  if (!firstname && !email && !subject && !message) {
+    return NextResponse.json(
+      {
+        data: [],
+        message: "error",
+      },
+      { status: 400 }
+    );
+  }
   try {
     client.sendEmail({
-      From: "contact@superoagrobase.com",
-      To: 'contact@superoagrobase.com',
-      Subject: "Test",
-      HtmlBody: "<p>Hello from Postmark!</p>",
+      Name: "The Oak African Store",
+      From: "info@shopoakstore.com",
+      To: useremail,
+      Subject: "Order Notification",
+      HtmlBody: checkMessage(
+        name,
+        email,
+        address,
+        city,
+        state,
+        country,
+        payment,
+        cartDetails,
+        totalPrice
+      ),
     });
-    // const adminMail = {
-    //   personalizations: [
-    //     {
-    //       to: [
-    //         {
-    //           email: adminEmail,
-    //           name: "The Oak African Store",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   from: {
-    //     email: "olu@panfinance.net",
-    //     name: "The Oak African Store",
-    //   },
-    //   subject: "Order Notification",
-    //   content: [
-    //     {
-    //       type: "text/html",
-    //       value: adminOrderNotification(firstname, email, message),
-    //     },
-    //   ],
-    // };
-    // const res = await client.send(adminMail);
+    client.sendEmail({
+      Name: "The Oak African Store",
+      From: "info@shopoakstore.com",
+      To: adminEmail,
+      Subject: "Order Notification",
+      HtmlBody: checkMessage(
+        name,
+        email,
+        address,
+        city,
+        state,
+        country,
+        payment,
+        cartDetails,
+        totalPrice
+      ),
+    });
     return NextResponse.json(
       { data: res, message: "success" },
       { status: 200 }

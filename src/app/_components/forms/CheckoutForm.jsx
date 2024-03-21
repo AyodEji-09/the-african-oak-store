@@ -32,7 +32,7 @@ const CheckoutForm = () => {
     cartDetails: cartDetails,
     payment: parseFloat(TotalPrice / 100).toFixed(2),
     payment_method: 1,
-    carrier: "",
+    //carrier: "",
     userType: adminEmail,
   });
 
@@ -47,7 +47,6 @@ const CheckoutForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log({ values });
-    return;
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -84,7 +83,7 @@ const CheckoutForm = () => {
     }
   };
 
-  const Carriers = async () => {
+/*   const Carriers = async () => {
     setLoadingCarriers(true);
     const res = await getCarriers();
     setCarriers(res);
@@ -93,7 +92,7 @@ const CheckoutForm = () => {
 
   useEffect(() => {
     Carriers();
-  }, []);
+  }, []); */
 
   return (
     <>
@@ -246,7 +245,7 @@ const CheckoutForm = () => {
         <div className="sb-mb-30">
           <h4>Select Preffered Carriers - Shipping Option </h4>
         </div>
-        <div className="">
+    {/*     <div className="">
           {loadingCarriers && (
             <Skeleton count={5} height={25} className="mb-1" />
           )}
@@ -269,7 +268,7 @@ const CheckoutForm = () => {
             </div>
           ))}
         </div>
-        <hr />
+        <hr /> */}
 
         <div className="sb-mb-30 my-4">
           <h4>Additional information</h4>

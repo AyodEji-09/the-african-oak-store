@@ -1,18 +1,14 @@
 import { NextResponse } from "next/server";
-// const client = require("@sendgrid/mail");
 var postmark = require("postmark");
-import { adminOrderNotification } from "../../_lib/emailTemplates/adminOrderNotification";
 import { checkMessage } from "../../_lib/emailTemplates/checkMessage";
-import { useShoppingCart } from "use-shopping-cart";
 
-// client.setApiKey(process.env.SENDGRID_API_KEY);
 const adminEmail = process.env.ADMIN_EMAIL;
 var serverToken = process.env.POSTMARK_API_KEY;
 var client = new postmark.ServerClient(serverToken);
 
 export async function POST(request) {
   const body = await request.json();
-  const { firstname, subject,name,userType, email, message,address,city,state,country,payment,cartCount,cartDetails,totalPrice } = body;
+  const { firstname, email, subject, message } = body;
   // if (!firstname && !email && !subject && !message) {
   //   return NextResponse.json(
   //     {
@@ -25,9 +21,9 @@ export async function POST(request) {
   try {
     client.sendEmail({
       From: "contact@superoagrobase.com",
-      To: 'taiwoakinfenwa2019@gmail.com',
+      To: 'contact@superoagrobase.com',
       Subject: "Test",
-      HtmlBody:checkMessage(firstname, email, message,userType, email, message,address,city,state,country,payment,cartCount,cartDetails,totalPrice),
+      HtmlBody: "<p>Hello from Postmark!</p>",
     });
     // const adminMail = {
     //   personalizations: [

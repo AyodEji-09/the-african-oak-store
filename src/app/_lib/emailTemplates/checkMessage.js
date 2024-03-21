@@ -1,23 +1,30 @@
-import CartItem from "../../_components/products/CartItem";
+export const checkMessage = (
+  name,
+  email,
+  address,
+  city,
+  state,
+  country,
+  payment,
+  cartDetails,
+  totalPrice
+) => {
+  const currentDate = new Date();
+  const day = currentDate.getDate();
+  const month = currentDate.getMonth() + 1;
+  const year = currentDate.getFullYear();
+  const formattedDay = day < 10 ? "0" + day : day;
+  const formattedMonth = month < 10 ? "0" + month : month;
+  const formattedDateStr = formattedDay + "/ " + formattedMonth + " /" + year;
 
-export const checkMessage = (name,userType, email, message,address,city,state,country,payment,cartCount,cartDetails,totalPrice) => {
-    const currentDate = new Date();
-    const day = currentDate.getDate();
-    const month = currentDate.getMonth() + 1;
-    const year = currentDate.getFullYear();
-    const formattedDay = (day < 10) ? '0' + day : day;
-    const formattedMonth = (month < 10) ? '0' + month : month;
-    const formattedDateStr = formattedDay + '/ ' + formattedMonth + ' /' + year;
-    const adminEmail = process.env.ADMIN_EMAIL;
-
-
-
-
-
-    const itemsHTML = Object.values(cartDetails ?? {}).map((item) => (
-      `
+  const itemsHTML = Object.values(cartDetails ?? {})
+    .map(
+      (item) =>
+        `
       <div style="border-collapse: collapse;display: table;width: 100%;height: 100%;background-color: transparent;">       
-      <div key="${item.id + item.title} style="border-collapse: collapse;display:table;width: 100%;height: 100%;background-color: transparent;">
+      <div key="${
+        item.id + item.title
+      } style="border-collapse: collapse;display:table;width: 100%;height: 100%;background-color: transparent;">
        <div  class="u-col u-col-29p84" style="max-width: 320px;min-width: 179.04px;display: table-cell;vertical-align: top;">
       <div style="height: 100%;width: 100% !important;">
       <div style="box-sizing: border-box; height: 100%; padding: 0px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;"><!--<![endif]-->
@@ -28,7 +35,9 @@ export const checkMessage = (name,userType, email, message,address,city,state,co
           <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 10px 5px 15px;font-family:'Montserrat',sans-serif; width:37px;" align="left">
             
       <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
-        <p style="font-size: 14px; line-height: 140%;"><strong>${item.title}</strong></p>
+        <p style="font-size: 14px; line-height: 140%;"><strong>${
+          item.title
+        }</strong></p>
       </div>
     
           </td>
@@ -51,7 +60,9 @@ export const checkMessage = (name,userType, email, message,address,city,state,co
           <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:5px 5px 5px 5px;font-family:'Montserrat',sans-serif;width:10px;" align="left">
             
       <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; width:100%;  text-align: left; word-wrap: break-word;">
-        <p style="font-size: 14px; line-height: 140%;"><strong>$${(item.price)/100}</strong></p>
+        <p style="font-size: 14px; line-height: 140%;"><strong>$${
+          item.price / 100
+        }</strong></p>
       </div>
     
           </td>
@@ -74,7 +85,9 @@ export const checkMessage = (name,userType, email, message,address,city,state,co
           <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Montserrat',sans-serif;width:305px; " align="left">
             
       <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
-        <p style="font-size: 14px; line-height: 140%;"><strong>x${item.quantity}</strong></p>
+        <p style="font-size: 14px; line-height: 140%;"><strong>x${
+          item.quantity
+        }</strong></p>
       </div>
     
           </td>
@@ -97,7 +110,9 @@ export const checkMessage = (name,userType, email, message,address,city,state,co
           <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 15px 10px 10px;font-family:'Montserrat',sans-serif;" align="left">
             
       <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: right; word-wrap: break-word;">
-        <p style="font-size: 14px; line-height: 140%;"><strong>$${(item.quantity * item.price)/100}</strong></p>
+        <p style="font-size: 14px; line-height: 140%;"><strong>$${
+          (item.quantity * item.price) / 100
+        }</strong></p>
       </div></td></tr>
       </tbody>
       </table>
@@ -106,9 +121,10 @@ export const checkMessage = (name,userType, email, message,address,city,state,co
       </div>
       </div>
       `
-  )).join('');
-    
-    return` 
+    )
+    .join("");
+
+  return ` 
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
@@ -373,11 +389,15 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
         
   <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: left; word-wrap: break-word;">
     <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 16px; line-height: 22.4px;">
-    ${email === "abiodunsamyemi@gmail.com"? `
+    ${
+      email === "abiodunsamyemi@gmail.com"
+        ? `
     <span style="font-size: 16px; line-height: 22.4px;"><strong><span style="font-family: Montserrat, sans-serif; line-height: 22.4px; font-size: 16px;">Hi, Admin</span></strong></span>
-  ` : `
+  `
+        : `
     <span style="font-size: 16px; line-height: 22.4px;"><strong><span style="font-family: Montserrat, sans-serif; line-height: 22.4px; font-size: 16px;">Dear ${name}</span></strong></span>
-  `}
+  `
+    }
     <strong><span style="font-family: Montserrat, sans-serif; line-height: 22.4px; font-size: 16px;">,</span></strong></span></p>
   </div>
 
@@ -839,7 +859,9 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
       <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:10px 15px 10px 10px;font-family:'Montserrat',sans-serif;" align="left">
         
   <div class="v-text-align v-line-height" style="font-size: 14px; color: #34495e; line-height: 140%; text-align: right; word-wrap: break-word;">
-    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 18px; line-height: 25.2px;"><strong>${totalPrice/100}</strong></span></p>
+    <p style="font-size: 14px; line-height: 140%;"><span style="font-size: 18px; line-height: 25.2px;"><strong>${
+      totalPrice / 100
+    }</strong></span></p>
   </div>
 
       </td>
@@ -1067,5 +1089,4 @@ table, td { color: #000000; } #u_body a { color: #0000ee; text-decoration: under
 </html>
 
  `;
-   
-}
+};
